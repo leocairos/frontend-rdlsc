@@ -1,6 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Waypoint } from 'react-waypoint';
-import MUIDataTable, { Responsive, SelectableRows } from 'mui-datatables';
+import MUIDataTable, {
+  FilterType,
+  Responsive,
+  SelectableRows,
+} from 'mui-datatables';
 
 import { format } from 'date-fns';
 
@@ -10,17 +14,21 @@ import PageContainer from '../../components/common/PageContainer';
 
 import { apiXiloliteCQ } from '../../services/api';
 
-interface IDataSample {
-  id?: number;
-  type?: string;
-  takenDateTime?: string;
-  sampleCollectionPoint?: string;
-  sampleConclusion?: string;
-  updated_at?: string;
-  sampleStatus?: string;
+interface IAuxiliar {
+  value: string;
 }
 
-export interface ISampleAPIResponse {
+interface IDataSample {
+  id?: number;
+  sample_type?: string;
+  taken_date_time?: string;
+  collection_point?: string;
+  sample_conclusion?: string;
+  updated_at?: string;
+  sample_status?: string;
+}
+
+interface ISampleAPIResponse {
   id: number;
   sample_type: string;
   taken_date_time: Date;
@@ -38,16 +46,16 @@ const formatedData = async (
   const dataFormated = samples.map((sample: ISampleAPIResponse) => {
     return {
       id: sample.id,
-      type: sample.sample_type,
-      takenDateTime: sample.taken_date_time
+      sample_type: sample.sample_type,
+      taken_date_time: sample.taken_date_time
         ? format(new Date(sample.taken_date_time), 'dd/MM/yyyy HH:mm')
         : '',
-      sampleCollectionPoint: sample.collection_point,
+      collection_point: sample.collection_point,
       updated_at: sample.updated_at
         ? format(new Date(sample.updated_at), 'dd/MM/yyyy HH:mm')
         : '',
-      sampleConclusion: sample.sample_conclusion,
-      sampleStatus: sample.sample_status,
+      sample_conclusion: sample.sample_conclusion,
+      sample_status: sample.sample_status,
       observation: sample.observation,
       lote: sample.lote,
     };
@@ -64,26 +72,24 @@ const MyLIMsSamples: React.FC = () => {
   const [count, setCount] = useState(0);
   const [page, setPage] = useState<number>(0);
   const [filterData, setFilterData] = useState('');
-  const rowsPerPage = 20;
+  const [sortOrder, setSortOrder] = useState('updated_at desc');
+  const rowsPerPage = 50;
   const [sampleTypesFilter, setSampleTypesFilter] = useState([]);
   const [collectionPointsFilter, setCollectionPointsFilter] = useState([]);
-
-  // const [sortOrder, setSortOrder] = useState({});
+  const [sampleStatusFilter, setSampleStatusFilter] = useState([]);
+  const [sampleConclusionFilter, setSampleConclusionFilter] = useState([]);
+  const [takenDateFilter, setTakenDateFilter] = useState<string[]>([]);
 
   const getDataApi = useCallback(
-    async (pageNum: number, pageSize: number) => {
-      const urlGet = `/samplesHeader?page=${pageNum}&pageSize=${pageSize}&filter=${filterData}`;
+    async (pageNum: number, pageSize: number, orderby?: string) => {
+      let urlGet = `/samplesHeader?page=${pageNum}&pageSize=${pageSize}`;
+      urlGet += `&filters=${filterData}`;
+      urlGet += `&orderby=${orderby || sortOrder}`;
 
-      console.log(
-        'getDataAPI ====    \nurlGet',
-        urlGet,
-        '\nfilterData',
-        filterData,
-      );
       const response = await apiXiloliteCQ.get(urlGet);
       return response.data;
     },
-    [filterData],
+    [filterData, sortOrder],
   );
 
   const getNewData = useCallback(
@@ -91,10 +97,8 @@ const MyLIMsSamples: React.FC = () => {
       setIsLoading(true);
       const dataAPI = await getDataApi(pageNum, rowsPerPage);
       const dataLoaded = await formatedData(dataAPI.samples);
-      // setData(dataLoaded);
       setCount(dataAPI.total);
       setPage(Number(dataAPI.page));
-      // setSortOrder(sortOrder);
       setIsLoading(false);
       return dataLoaded;
     },
@@ -107,7 +111,7 @@ const MyLIMsSamples: React.FC = () => {
       label: 'Id',
       options: {
         filter: false,
-        sort: false,
+        sort: true,
         viewColumns: false,
         // infinite scrolling
         customBodyRenderLite: (dataIndex, rowIndex) => {
@@ -123,7 +127,7 @@ const MyLIMsSamples: React.FC = () => {
                     setData([...data, ...newData]);
                   }}
                 />
-                {value}*
+                {value}
               </>
             );
           }
@@ -132,30 +136,40 @@ const MyLIMsSamples: React.FC = () => {
       },
     },
     {
-      name: 'takenDateTime',
+      name: 'taken_date_time',
       label: 'Coletado em',
       options: {
-        filter: false,
+        filter: true,
         sort: true,
+        customFilterListOptions: { render: (v: string) => `Coletado: ${v}` },
+        filterOptions: {
+          names: takenDateFilter,
+        },
       },
     },
     {
-      name: 'type',
+      name: 'sample_type',
       label: 'Tipo de Amostra',
       options: {
         filter: true,
-        customFilterListOptions: { render: v => `Tipo de Amostra: ${v}` },
+        sort: true,
+        customFilterListOptions: {
+          render: (v: string) => `Tipo de Amostra: ${v}`,
+        },
         filterOptions: {
           names: sampleTypesFilter,
         },
       },
     },
     {
-      name: 'sampleCollectionPoint',
+      name: 'collection_point',
       label: 'Ponto de Coleta',
       options: {
         filter: true,
-        customFilterListOptions: { render: v => `Ponto de coleta: ${v}` },
+        sort: true,
+        customFilterListOptions: {
+          render: (v: string) => `Ponto de coleta: ${v}`,
+        },
         filterOptions: {
           names: collectionPointsFilter,
         },
@@ -165,70 +179,121 @@ const MyLIMsSamples: React.FC = () => {
       name: 'lote',
       label: 'Lote',
       options: {
-        filter: true,
         sort: true,
+        filter: true,
+        filterType: 'textField' as FilterType,
+        customFilterListOptions: { render: (v: string) => `Lote: ${v}` },
       },
     },
     {
-      name: 'sampleConclusion',
+      name: 'sample_conclusion',
       label: 'Parecer',
       options: {
         filter: true,
         sort: true,
+        customFilterListOptions: { render: (v: string) => `Parecer: ${v}` },
+        filterOptions: {
+          names: sampleConclusionFilter,
+        },
       },
     },
     {
-      name: 'sampleStatus',
+      name: 'sample_status',
       label: 'Status',
       options: {
         filter: true,
         sort: true,
+        customFilterListOptions: { render: (v: string) => `Status: ${v}` },
+        filterOptions: {
+          names: sampleStatusFilter,
+        },
       },
     },
   ];
 
-  const loadSamples = useCallback(async (): Promise<void> => {
-    setIsLoading(true);
-    const dataAPI = await getDataApi(1, rowsPerPage);
-    const dataLoaded = await formatedData(dataAPI.samples);
+  const loadSamples = useCallback(
+    async (defaultPage?: number): Promise<void> => {
+      setIsLoading(true);
+      const dataAPI = await getDataApi(defaultPage || 1, rowsPerPage);
+      const dataLoaded = await formatedData(dataAPI.samples);
 
-    setData(dataLoaded);
-    setCount(dataAPI.total);
-    setPage(Number(dataAPI.page));
-    setIsLoading(false);
-  }, [getDataApi]);
+      setData(dataLoaded);
+      setCount(dataAPI.total);
+      setPage(Number(dataAPI.page));
+      setIsLoading(false);
+    },
+    [getDataApi],
+  );
+
+  const loadFilters = useCallback(async (): Promise<void> => {
+    apiXiloliteCQ
+      .get('/filterByTable?fieldTable=sample_type')
+      .then(res => res.data.data.map((t: IAuxiliar) => t.value))
+      .then(dataAuxiliar => setSampleTypesFilter(dataAuxiliar || []));
+
+    apiXiloliteCQ
+      .get('/filterByTable?fieldTable=collection_point')
+      .then(res => res.data.data.map((t: IAuxiliar) => t.value))
+      .then(dataAuxiliar => setCollectionPointsFilter(dataAuxiliar || []));
+
+    apiXiloliteCQ
+      .get('/filterByTable?fieldTable=sample_status')
+      .then(res => res.data.data.map((t: IAuxiliar) => t.value))
+      .then(dataAuxiliar => setSampleStatusFilter(dataAuxiliar || []));
+
+    apiXiloliteCQ
+      .get('/filterByTable?fieldTable=sample_conclusion')
+      .then(res => res.data.data.map((t: IAuxiliar) => t.value))
+      .then(dataAuxiliar => setSampleConclusionFilter(dataAuxiliar || []));
+
+    setTakenDateFilter(['Hoje', 'Últimas 24h', 'Últimas 48h', 'Últimas 72h']);
+  }, []);
 
   useEffect(() => {
-    const loadFilters = async (): Promise<void> => {
-      const responseSampleTypes = await apiXiloliteCQ.get(
-        'auxiliar?table=sample_types',
-      );
-      const dataType = responseSampleTypes.data.data.map(t => t.identification);
-      await Promise.all(dataType);
-      setSampleTypesFilter(dataType || []);
-
-      const respCollectionPoints = await apiXiloliteCQ.get(
-        'auxiliar?table=collection_points',
-      );
-      const collectionPoints = respCollectionPoints.data.data.map(
-        t => t.identification,
-      );
-      await Promise.all(collectionPoints);
-      setCollectionPointsFilter(collectionPoints || []);
-    };
-
     loadFilters();
     loadSamples();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [loadFilters, loadSamples]);
 
   const handleFilterSubmit = useCallback(applyFilters => {
     const filterList = applyFilters();
     setIsLoading(true);
 
-    console.log('handleFilterSubmit', filterList);
+    // console.log('handleFilterSubmit', filterList);
 
     const arrayFilter = [''];
+
+    if (filterList[1].length > 0) {
+      const dateFilter = new Date();
+      dateFilter.setMinutes(0);
+      dateFilter.setSeconds(0);
+
+      // console.log('dateFilter antes', dateFilter);
+      switch (filterList[1][0]) {
+        case 'Hoje':
+          dateFilter.setHours(0);
+          break;
+        case 'Últimas 24h':
+          dateFilter.setHours(dateFilter.getHours() - 24);
+          break;
+        case 'Últimas 48h':
+          dateFilter.setHours(dateFilter.getHours() - 48);
+          break;
+        case 'Últimas 72h':
+          dateFilter.setHours(dateFilter.getHours() - 72);
+          break;
+        default:
+          break;
+      }
+
+      const year = dateFilter.getFullYear();
+      const month = dateFilter.getMonth() + 1;
+      const day = dateFilter.getDate();
+      const hour = dateFilter.getHours();
+
+      const dateFilterStr = `${year}-${month}-${day} ${hour}:00:00`;
+
+      arrayFilter.push(`taken_date_time>='${dateFilterStr}'`);
+    }
 
     if (filterList[2].length > 0) {
       arrayFilter.push(`sample_type='${filterList[2]}'`);
@@ -261,22 +326,21 @@ const MyLIMsSamples: React.FC = () => {
     }
 
     setFilterData(newFilterQuery);
-    console.log('filterData in handleFilter', filterData);
-
-    loadSamples();
+    setPage(Number(1));
 
     setIsLoading(false);
   }, []);
 
   const options = {
-    download: false,
-    print: false,
+    download: true,
+    print: true,
     filter: true,
+    search: false,
     fixedHeader: true,
     responsive: 'vertical' as Responsive,
     selectableRows: 'none' as SelectableRows,
     pagination: false,
-    tableBodyHeight: '500px',
+    tableBodyHeight: `${Math.trunc(Number(window.innerHeight * 0.7))}px`,
 
     serverSide: true,
     // makes it so filters have to be "confirmed" before being applied to the
@@ -291,283 +355,53 @@ const MyLIMsSamples: React.FC = () => {
             variant="contained"
             onClick={() => handleFilterSubmit(applyNewFilters)}
           >
-            Apply Filters
+            Aplicar Filtros
           </Button>
         </div>
       );
     },
 
-    // callback that gets executed when filters are confirmed
-    onFilterConfirm: filterList => {
-      console.log('onFilterConfirm', filterList);
-    },
-
-    onFilterDialogOpen: () => {
-      console.log('filter dialog opened');
-    },
-    onFilterDialogClose: () => {
-      console.log('filter dialog closed');
-    },
     onFilterChange: (column, filterList, type) => {
       if (type === 'chip') {
-        const newFilters = () => filterList;
-        console.log('updating filters via chip', newFilters);
+        const newFilters = (): any => filterList;
+        // console.log('updating filters via chip', newFilters);
         handleFilterSubmit(newFilters);
       }
     },
-  };
 
-  const titleTable = (
-    <Typography variant="h3">
-      Amostras
-      {isLoading && (
-        <CircularProgress
-          size={24}
-          style={{ marginLeft: 15, position: 'relative', top: 4 }}
-        />
-      )}
-    </Typography>
-  );
+    onColumnSortChange: (changedColumn, direction) => {
+      let order = 'desc';
+      if (direction === 'asc') {
+        order = 'asc';
+      }
 
-  return (
-    <PageContainer>
-      <MUIDataTable
-        title={titleTable}
-        data={data}
-        columns={columns}
-        options={options}
-      />
-      <Typography variant="h6">
-        {data.length} de {count} filterData: {filterData}
-        {isLoading && (
-          <CircularProgress
-            size={24}
-            style={{ marginLeft: 15, position: 'relative', top: 4 }}
-          />
-        )}
-      </Typography>
-    </PageContainer>
-  );
-};
-
-export default MyLIMsSamples;
-
-/*
-import React, { useState, useEffect, useCallback } from 'react';
-import MUIDataTable from 'mui-datatables';
-import { format } from 'date-fns';
-
-import { CircularProgress, Typography } from '@material-ui/core';
-import PageContainer from '../../components/common/PageContainer';
-
-import { apiXiloliteCQ } from '../../services/api';
-
-interface IDataSample {
-  id?: number;
-  type?: string;
-  takenDateTime?: string;
-  sampleCollectionPoint?: string;
-  sampleConclusion?: string;
-  currentStatusEditionDateTime?: string;
-  sampleStatus?: string;
-}
-
-export interface ISampleAPIResponse {
-  id: number;
-  sampleType: { id: number; identification: string };
-  takenDateTime: Date;
-  sampleConclusion: { id: number; identification: string };
-  sampleCollectionPoint: { id: number; identification: string };
-  updated_at: Date;
-  sampleStatus: { id: number; identification: string };
-}
-
-const columns = [
-  {
-    name: 'id',
-    label: 'Id',
-    options: {
-      filter: true,
-      sort: true,
+      setSortOrder(`${changedColumn} ${order}`);
     },
-  },
-  {
-    name: 'takenDateTime',
-    label: 'Coletado em',
-    options: {
-      filter: true,
-      sort: true,
-    },
-  },
-  {
-    name: 'type',
-    label: 'Tipo de amostra',
-    options: {
-      filter: true,
-      sort: true,
-    },
-  },
-  {
-    name: 'sampleCollectionPoint',
-    label: 'Ponto de Coleta',
-    options: {
-      filter: true,
-      sort: true,
-    },
-  },
-  {
-    name: 'currentStatusEditionDateTime',
-    label: 'Atualizado em',
-    options: {
-      filter: true,
-      sort: true,
-    },
-  },
-  {
-    name: 'sampleConclusion',
-    label: 'Parecer',
-    options: {
-      filter: true,
-      sort: true,
-    },
-  },
-  {
-    name: 'sampleStatus',
-    label: 'Status',
-    options: {
-      filter: true,
-      sort: true,
-    },
-  },
-];
 
-const formatedData = async (
-  samples: ISampleAPIResponse[],
-): Promise<IDataSample[]> => {
-  const dataFormated = samples.map((sample: ISampleAPIResponse) => {
-    return {
-      id: sample.id,
-      type: sample.sampleType?.identification,
-      takenDateTime: sample.takenDateTime
-        ? format(new Date(sample.takenDateTime), 'dd/MM/yyyy HH:mm')
-        : '',
-      sampleCollectionPoint: sample.sampleCollectionPoint?.identification,
-      currentStatusEditionDateTime: sample.updated_at
-        ? format(new Date(sample.updated_at), 'dd/MM/yyyy HH:mm')
-        : '',
-
-      sampleConclusion: sample.sampleConclusion?.identification,
-      sampleStatus: sample.sampleStatus?.identification,
-    };
-  });
-
-  await Promise.all(dataFormated);
-
-  return dataFormated as IDataSample[];
-};
-
-const MylimsSamples: React.FC = () => {
-  const [data, setData] = useState<IDataSample[]>([{}]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [count, setCount] = useState(0);
-  const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
-  const [sortOrder, setSortOrder] = useState({});
-
-  const getDataApi = useCallback(async (numPage: number, pageSize: number) => {
-    const response = await apiXiloliteCQ.get(
-      `/samples?page=${numPage}1&pageSize=${pageSize}`,
-    );
-    return response.data;
-  }, []);
-
-  const changePage = useCallback(
-    async (numPage, sortOrder) => {
-      setIsLoading(true);
-      const dataAPI = await getDataApi(numPage, rowsPerPage);
-      const dataLoaded = await formatedData(dataAPI.samples);
-      // console.log(dataLoaded);
-      setData(dataLoaded);
-      setCount(dataAPI.total);
-      setPage(dataAPI.page);
-      setSortOrder(sortOrder);
-
-      setIsLoading(false);
-    },
-    [getDataApi, rowsPerPage],
-  );
-
-  const changeRowsPerPage = useCallback(
-    async (numRows: number) => {
-      setRowsPerPage(numRows);
-      changePage(page, sortOrder);
-    },
-    [changePage, page, sortOrder],
-  );
-
-  useEffect(() => {
-    async function loadSamples(): Promise<void> {
-      // console.log('Getting sample in API...');
-      setIsLoading(true);
-      const dataAPI = await getDataApi(1, rowsPerPage);
-      const dataLoaded = await formatedData(dataAPI.samples);
-      // console.log(dataLoaded);
-      setData(dataLoaded);
-      setCount(dataAPI.total);
-      setPage(dataAPI.page);
-      setIsLoading(false);
-    }
-
-    loadSamples();
-  }, []);
-
-  const options = {
     textLabels: {
       body: {
-        noMatch: 'Desculpe, nenhum registro correspondente encontrado',
-        toolTip: 'Ordenar',
-        columnHeaderTooltip: column => `Ordenar por ${column.label}`,
+        noMatch: 'Desculpe, não há registros para exibir!',
       },
-    },
-    // filterType: 'checkbox',
-    filter: true,
-    // filterType: 'dropdown',
-    // responsive: 'vertical',
-    serverSide: true,
-    count,
-    rowsPerPage,
-    jumpToPage: true,
-    rowsPerPageOptions: [10, 20, 30, 50, 100],
-    // sortOrder,
-    // onChangeRowsPerPage: () => {
-    //  console.log('rowsPerPage', rowsPerPage);
-    // changePage(page, sortOrder);
-    // },
-    onTableChange: (action, tableState) => {
-      // console.log('action: ', action, '\ntableState:', tableState);
-
-      // a developer could react to change on an action basis or
-      // examine the state as a whole and do whatever they want
-
-      switch (action) {
-        case 'changePage':
-          changePage(tableState.page, tableState.sortOrder);
-          break;
-        case 'sort':
-          // this.sort(tableState.page, tableState.sortOrder);
-          break;
-        case 'changeRowsPerPage':
-          changeRowsPerPage(tableState.rowsPerPage);
-          break;
-        default:
-        // console.log('action not handled.');
-      }
+      filter: {
+        all: 'Todos os registros',
+        title: 'Filtros',
+        reset: 'Limpar filtros',
+      },
+      selectedRows: {
+        text: 'rows has been deleted',
+        delete: 'Delete Row',
+        deleteAria: 'Deleted Selected Rows',
+      },
     },
   };
 
   const titleTable = (
     <Typography variant="h5">
-      Amostras
+      Amostras{' '}
+      <span style={{ fontSize: 15, position: 'relative', top: -2 }}>
+        ({new Intl.NumberFormat().format(data.length)} de{' '}
+        {new Intl.NumberFormat().format(count)} )
+      </span>
       {isLoading && (
         <CircularProgress
           size={24}
@@ -589,5 +423,4 @@ const MylimsSamples: React.FC = () => {
   );
 };
 
-export default MylimsSamples;
-*/
+export default MyLIMsSamples;
