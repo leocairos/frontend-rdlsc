@@ -61,5 +61,41 @@ rdlsc-web
 
 * deploy Google Cloud
 
+### Deploy Frontend at node server
+
+* Instalar node
+
+* clonar repositorio do git dentro do servidor
+* $ yarn
+* $ yarn build
+
+* ajustar .env
+  * $ cp .env.example .env
+  * $ vim .env
+
+* Testar build
+  * $ node index.js
+
+* Mantendo aplicação no ar
+
+  * instalar pm2: $ sudo npm install -g pm2
+  * executar frontend com PM2
+    * $ pm2 start index.js --name frontend-rdlsc
+
+    *  pm2 start pm2-config.json
+    *  pm2 delete pm2-config.json
+
+    * comandos pm2
+      * pm2 list
+      * pm2 monit
+      * pm2 log NAMEAPP
+      * pm2 stop NAMEAPP
+      * pm2 delete NAMEAPP
+
+  * automatizar start do PM2:
+    * $ pm2 startup systemd
+    * $ sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u deploy --hp /home/leonardo.sampaio
+
+
 ## Git Flow
   * usar develop sempre

@@ -56,12 +56,22 @@ const SidebarNav = (props: ISidebarNavProps): any => {
 
   const itemsMenu = [
     ...(user.role === 'admin'
-      ? [{ name: 'Usuários', link: '/users', Icon: IconAdmin }]
+      ? [
+          { name: 'Usuários', link: '/users', Icon: IconAdmin },
+          { name: 'Home', link: '/home', Icon: IconHome },
+          { name: 'Service Desk', link: '/serviceDesk', Icon: IconServiceDesk },
+          {
+            name: 'Samples (myLIMs)',
+            link: '/mylimsSamples',
+            Icon: IconSamples,
+          },
+          { name: 'Meu Perfil', link: '/profile', Icon: IconProfile },
+        ]
       : []),
     /* ...(['cacc', 'life', 'admin'].indexOf(user.role) >= 0
       ? [{ name: 'Menu CACC', link: '/profile', Icon: IconProfile }]
       : []), */
-    ...(['member', 'cacc', 'life'].indexOf(user.role) >= 0
+    ...(['user', 'cacc', 'life'].indexOf(user.role) >= 0
       ? [
           { name: 'Home', link: '/home', Icon: IconHome },
           { name: 'Service Desk', link: '/serviceDesk', Icon: IconServiceDesk },

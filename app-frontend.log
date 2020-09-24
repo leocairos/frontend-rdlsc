@@ -1,0 +1,2723 @@
+2020-09-24T12:57:28.556Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (undefined)                            
+####################################################################################################
+
+2020-09-24T12:57:52.410Z  info: GET / ::1 - - 200 2305 B 5.013 ms
+
+2020-09-24T12:57:52.462Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 3.403 ms
+
+2020-09-24T12:57:52.465Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 200 57659 B 2.878 ms
+
+2020-09-24T12:57:52.470Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.831 ms
+
+2020-09-24T12:57:52.552Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 0.893 ms
+
+2020-09-24T12:57:52.582Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 200 135542 B 0.835 ms
+
+2020-09-24T12:57:52.594Z  info: GET /manifest.json ::1 - - 304 - B 0.574 ms
+
+2020-09-24T12:57:52.619Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 0.894 ms
+
+2020-09-24T12:58:27.809Z  info: GET / ::1 - - 304 - B 0.529 ms
+
+2020-09-24T12:58:27.841Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.764 ms
+
+2020-09-24T12:58:27.843Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.802 ms
+
+2020-09-24T12:58:27.844Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 304 - B 1.512 ms
+
+2020-09-24T12:58:27.925Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.469 ms
+
+2020-09-24T12:58:27.938Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.429 ms
+
+2020-09-24T12:58:27.960Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 304 - B 0.407 ms
+
+2020-09-24T12:58:28.025Z  info: GET /manifest.json ::1 - - 304 - B 0.359 ms
+
+2020-09-24T13:00:38.530Z  info: GET / ::1 - - 304 - B 0.430 ms
+
+2020-09-24T13:00:38.550Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.079 ms
+
+2020-09-24T13:00:38.551Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.960 ms
+
+2020-09-24T13:00:38.553Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 304 - B 3.940 ms
+
+2020-09-24T13:00:38.628Z  info: GET /manifest.json ::1 - - 304 - B 1.038 ms
+
+2020-09-24T13:00:38.630Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.077 ms
+
+2020-09-24T13:00:38.635Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.127 ms
+
+2020-09-24T13:00:38.639Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.620 ms
+
+2020-09-24T13:00:38.641Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 304 - B 1.268 ms
+
+2020-09-24T13:01:55.416Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:01:59.357Z  info: GET / ::1 - - 304 - B 4.556 ms
+
+2020-09-24T13:01:59.381Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.503 ms
+
+2020-09-24T13:01:59.382Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.036 ms
+
+2020-09-24T13:01:59.395Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 304 - B 14.065 ms
+
+2020-09-24T13:01:59.453Z  info: GET /manifest.json ::1 - - 304 - B 0.501 ms
+
+2020-09-24T13:01:59.458Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 1.999 ms
+
+2020-09-24T13:01:59.462Z  info: GET /favicon.ico ::1 - - 200 1150 B 6.247 ms
+
+2020-09-24T13:01:59.464Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 3.840 ms
+
+2020-09-24T13:01:59.465Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 304 - B 4.569 ms
+
+2020-09-24T13:04:14.756Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:04:19.542Z  info: GET / ::1 - - 304 - B 6.083 ms
+
+2020-09-24T13:04:19.572Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 4.131 ms
+
+2020-09-24T13:04:19.574Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 3.765 ms
+
+2020-09-24T13:04:19.576Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 304 - B 4.557 ms
+
+2020-09-24T13:04:19.629Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.562 ms
+
+2020-09-24T13:04:19.632Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.391 ms
+
+2020-09-24T13:04:19.642Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 304 - B 0.561 ms
+
+2020-09-24T13:04:19.748Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.184 ms
+
+2020-09-24T13:04:19.751Z  info: GET /manifest.json ::1 - - 304 - B 0.535 ms
+
+2020-09-24T13:04:21.387Z  info: GET / ::1 - - 304 - B 0.388 ms
+
+2020-09-24T13:04:21.409Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.426 ms
+
+2020-09-24T13:04:21.412Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.506 ms
+
+2020-09-24T13:04:21.415Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 304 - B 0.635 ms
+
+2020-09-24T13:04:21.474Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.470 ms
+
+2020-09-24T13:04:21.512Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 304 - B 0.414 ms
+
+2020-09-24T13:04:21.526Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.434 ms
+
+2020-09-24T13:04:21.546Z  info: GET /manifest.json ::1 - - 304 - B 0.351 ms
+
+2020-09-24T13:04:33.359Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:04:36.540Z  info: GET / ::1 - - 304 - B 3.305 ms
+
+2020-09-24T13:04:36.564Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.790 ms
+
+2020-09-24T13:04:36.568Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.162 ms
+
+2020-09-24T13:04:36.570Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 304 - B 2.604 ms
+
+2020-09-24T13:04:36.641Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.694 ms
+
+2020-09-24T13:04:36.643Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.655 ms
+
+2020-09-24T13:04:36.652Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 304 - B 9.274 ms
+
+2020-09-24T13:04:36.685Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.120 ms
+
+2020-09-24T13:04:36.694Z  info: GET /manifest.json ::1 - - 304 - B 0.376 ms
+
+2020-09-24T13:04:38.786Z  info: GET / ::1 - - 304 - B 0.390 ms
+
+2020-09-24T13:04:38.811Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.492 ms
+
+2020-09-24T13:04:38.813Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.754 ms
+
+2020-09-24T13:04:38.814Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 304 - B 1.635 ms
+
+2020-09-24T13:04:38.872Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.477 ms
+
+2020-09-24T13:04:38.906Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 304 - B 0.447 ms
+
+2020-09-24T13:04:38.919Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.434 ms
+
+2020-09-24T13:04:38.929Z  info: GET /manifest.json ::1 - - 304 - B 0.521 ms
+
+2020-09-24T13:04:58.793Z  info: GET / ::1 - - 304 - B 1.017 ms
+
+2020-09-24T13:04:58.826Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.812 ms
+
+2020-09-24T13:04:58.832Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 304 - B 0.446 ms
+
+2020-09-24T13:04:58.833Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.242 ms
+
+2020-09-24T13:04:58.890Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.346 ms
+
+2020-09-24T13:04:58.902Z  info: GET /manifest.json ::1 - - 304 - B 1.623 ms
+
+2020-09-24T13:04:58.911Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.591 ms
+
+2020-09-24T13:04:58.913Z  info: GET /favicon.ico ::1 - - 200 1150 B 11.255 ms
+
+2020-09-24T13:04:58.914Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 304 - B 3.190 ms
+
+2020-09-24T13:05:03.739Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:06:05.242Z  info: 
+####################################################################################################
+                           Service now running on port '3031' (undefined)                            
+####################################################################################################
+
+2020-09-24T13:08:10.060Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:08:17.860Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:09:10.257Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:09:27.168Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:09:30.454Z  info: GET / ::1 - - 304 - B 3.064 ms
+
+2020-09-24T13:09:30.479Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.614 ms
+
+2020-09-24T13:09:30.485Z  info: GET /static/js/main.ca1da35f.chunk.js ::1 - - 304 - B 1.038 ms
+
+2020-09-24T13:09:30.497Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 12.480 ms
+
+2020-09-24T13:09:30.543Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.453 ms
+
+2020-09-24T13:09:30.545Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.444 ms
+
+2020-09-24T13:09:30.728Z  info: GET /static/js/main.ca1da35f.chunk.js.map ::1 - - 304 - B 0.520 ms
+
+2020-09-24T13:09:30.740Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.224 ms
+
+2020-09-24T13:09:30.744Z  info: GET /manifest.json ::1 - - 304 - B 0.468 ms
+
+2020-09-24T13:09:32.429Z  info: GET /static/media/logo.0399c5b6.svg ::1 - - 304 - B 0.552 ms
+
+2020-09-24T13:11:01.234Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:11:03.730Z  info: GET / ::1 - - 200 2305 B 4.584 ms
+
+2020-09-24T13:11:03.758Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 4.080 ms
+
+2020-09-24T13:11:03.762Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.784 ms
+
+2020-09-24T13:11:03.773Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.562 ms
+
+2020-09-24T13:11:03.857Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 0.847 ms
+
+2020-09-24T13:11:04.027Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.563 ms
+
+2020-09-24T13:11:04.028Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 2.149 ms
+
+2020-09-24T13:11:04.039Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 0.955 ms
+
+2020-09-24T13:11:04.045Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 200 135540 B 1.195 ms
+
+2020-09-24T13:11:04.077Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 1.169 ms
+
+2020-09-24T13:11:04.109Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.980 ms
+
+2020-09-24T13:11:04.122Z  info: GET /manifest.json ::1 - - 304 - B 0.906 ms
+
+2020-09-24T13:11:05.790Z  info: GET /static/media/logo.0399c5b6.svg ::1 - - 200 11623 B 0.730 ms
+
+2020-09-24T13:11:31.916Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:11:34.331Z  info: GET /mylimsSamples ::1 - - 200 2305 B 5.267 ms
+
+2020-09-24T13:11:34.358Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 2.033 ms
+
+2020-09-24T13:11:34.360Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 3.312 ms
+
+2020-09-24T13:11:34.362Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 4.309 ms
+
+2020-09-24T13:11:34.412Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.441 ms
+
+2020-09-24T13:11:34.450Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.544 ms
+
+2020-09-24T13:11:34.484Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.376 ms
+
+2020-09-24T13:11:34.523Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.995 ms
+
+2020-09-24T13:11:34.538Z  info: GET /manifest.json ::1 - - 304 - B 0.557 ms
+
+2020-09-24T13:11:45.205Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:11:46.842Z  info: GET /mylimsSamples ::1 - - 304 - B 4.921 ms
+
+2020-09-24T13:11:46.872Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.342 ms
+
+2020-09-24T13:11:46.877Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 0.719 ms
+
+2020-09-24T13:11:46.879Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.652 ms
+
+2020-09-24T13:11:46.932Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.455 ms
+
+2020-09-24T13:11:46.951Z  info: GET /manifest.json ::1 - - 304 - B 2.598 ms
+
+2020-09-24T13:11:46.957Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 6.671 ms
+
+2020-09-24T13:11:46.959Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.469 ms
+
+2020-09-24T13:11:46.962Z  info: GET /favicon.ico ::1 - - 200 1150 B 11.590 ms
+
+2020-09-24T13:11:48.262Z  info: GET /mylimsSamples ::1 - - 304 - B 0.978 ms
+
+2020-09-24T13:11:48.284Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.226 ms
+
+2020-09-24T13:11:48.288Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 4.256 ms
+
+2020-09-24T13:11:48.290Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.780 ms
+
+2020-09-24T13:11:48.344Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.498 ms
+
+2020-09-24T13:11:48.345Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.422 ms
+
+2020-09-24T13:11:48.349Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.478 ms
+
+2020-09-24T13:11:48.400Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.718 ms
+
+2020-09-24T13:11:48.410Z  info: GET /manifest.json ::1 - - 304 - B 0.449 ms
+
+2020-09-24T13:11:53.148Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:11:55.059Z  info: GET /mylimsSamples ::1 - - 304 - B 4.253 ms
+
+2020-09-24T13:11:55.082Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.686 ms
+
+2020-09-24T13:11:55.087Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.255 ms
+
+2020-09-24T13:11:55.090Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 3.451 ms
+
+2020-09-24T13:11:55.147Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.466 ms
+
+2020-09-24T13:11:55.152Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.614 ms
+
+2020-09-24T13:11:55.159Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.395 ms
+
+2020-09-24T13:11:55.215Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.434 ms
+
+2020-09-24T13:11:55.223Z  info: GET /manifest.json ::1 - - 304 - B 0.452 ms
+
+2020-09-24T13:11:56.152Z  info: GET /mylimsSamples ::1 - - 304 - B 1.383 ms
+
+2020-09-24T13:11:56.182Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.515 ms
+
+2020-09-24T13:11:56.186Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.063 ms
+
+2020-09-24T13:11:56.194Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 9.315 ms
+
+2020-09-24T13:11:56.241Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.478 ms
+
+2020-09-24T13:11:56.243Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.458 ms
+
+2020-09-24T13:11:56.245Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.414 ms
+
+2020-09-24T13:11:56.296Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.584 ms
+
+2020-09-24T13:11:56.309Z  info: GET /manifest.json ::1 - - 304 - B 0.476 ms
+
+2020-09-24T13:11:56.752Z  info: GET /mylimsSamples ::1 - - 304 - B 1.172 ms
+
+2020-09-24T13:11:56.779Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.534 ms
+
+2020-09-24T13:11:56.782Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.720 ms
+
+2020-09-24T13:11:56.783Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.914 ms
+
+2020-09-24T13:11:56.836Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.736 ms
+
+2020-09-24T13:11:56.840Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.489 ms
+
+2020-09-24T13:11:56.842Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.375 ms
+
+2020-09-24T13:11:56.889Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.632 ms
+
+2020-09-24T13:11:56.902Z  info: GET /manifest.json ::1 - - 304 - B 0.584 ms
+
+2020-09-24T13:11:57.215Z  info: GET /mylimsSamples ::1 - - 304 - B 0.904 ms
+
+2020-09-24T13:11:57.245Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.597 ms
+
+2020-09-24T13:11:57.248Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.703 ms
+
+2020-09-24T13:11:57.250Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.174 ms
+
+2020-09-24T13:11:57.306Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.447 ms
+
+2020-09-24T13:11:57.310Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.475 ms
+
+2020-09-24T13:11:57.311Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.212 ms
+
+2020-09-24T13:11:57.351Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.600 ms
+
+2020-09-24T13:11:57.356Z  info: GET /manifest.json ::1 - - 304 - B 0.390 ms
+
+2020-09-24T13:11:57.600Z  info: GET /mylimsSamples ::1 - - 304 - B 0.974 ms
+
+2020-09-24T13:11:57.625Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.488 ms
+
+2020-09-24T13:11:57.628Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.743 ms
+
+2020-09-24T13:11:57.629Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.821 ms
+
+2020-09-24T13:11:57.694Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.366 ms
+
+2020-09-24T13:11:57.699Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.765 ms
+
+2020-09-24T13:11:57.700Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.409 ms
+
+2020-09-24T13:11:57.740Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.581 ms
+
+2020-09-24T13:11:57.753Z  info: GET /manifest.json ::1 - - 304 - B 0.729 ms
+
+2020-09-24T13:11:57.943Z  info: GET /mylimsSamples ::1 - - 304 - B 0.960 ms
+
+2020-09-24T13:11:57.975Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.401 ms
+
+2020-09-24T13:11:57.977Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.527 ms
+
+2020-09-24T13:11:57.979Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 4.257 ms
+
+2020-09-24T13:11:58.039Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.342 ms
+
+2020-09-24T13:11:58.041Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.366 ms
+
+2020-09-24T13:11:58.044Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.399 ms
+
+2020-09-24T13:11:58.082Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.629 ms
+
+2020-09-24T13:11:58.095Z  info: GET /manifest.json ::1 - - 304 - B 0.460 ms
+
+2020-09-24T13:12:00.366Z  info: GET / ::1 - - 304 - B 0.580 ms
+
+2020-09-24T13:12:00.391Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.469 ms
+
+2020-09-24T13:12:00.393Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.681 ms
+
+2020-09-24T13:12:00.395Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.691 ms
+
+2020-09-24T13:12:00.441Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.387 ms
+
+2020-09-24T13:12:00.599Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 304 - B 0.760 ms
+
+2020-09-24T13:12:00.600Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 304 - B 1.502 ms
+
+2020-09-24T13:12:00.601Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 304 - B 2.428 ms
+
+2020-09-24T13:12:00.616Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.545 ms
+
+2020-09-24T13:12:00.633Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.408 ms
+
+2020-09-24T13:12:00.671Z  info: GET /manifest.json ::1 - - 304 - B 0.772 ms
+
+2020-09-24T13:12:06.224Z  info: GET /mylimsSamples ::1 - - 304 - B 0.764 ms
+
+2020-09-24T13:12:06.254Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.587 ms
+
+2020-09-24T13:12:06.263Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.805 ms
+
+2020-09-24T13:12:06.264Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.757 ms
+
+2020-09-24T13:12:06.345Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 1.139 ms
+
+2020-09-24T13:12:06.346Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 2.479 ms
+
+2020-09-24T13:12:06.361Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 17.216 ms
+
+2020-09-24T13:12:06.395Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.722 ms
+
+2020-09-24T13:12:06.408Z  info: GET /manifest.json ::1 - - 304 - B 0.525 ms
+
+2020-09-24T13:12:11.479Z  info: GET / ::1 - - 304 - B 0.341 ms
+
+2020-09-24T13:12:11.506Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.712 ms
+
+2020-09-24T13:12:11.508Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.586 ms
+
+2020-09-24T13:12:11.510Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.523 ms
+
+2020-09-24T13:12:11.563Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.397 ms
+
+2020-09-24T13:12:11.571Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.577 ms
+
+2020-09-24T13:12:11.750Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.874 ms
+
+2020-09-24T13:12:11.794Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.500 ms
+
+2020-09-24T13:12:11.799Z  info: GET /manifest.json ::1 - - 304 - B 0.327 ms
+
+2020-09-24T13:12:25.522Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:12:28.526Z  info: GET / ::1 - - 304 - B 3.310 ms
+
+2020-09-24T13:12:28.551Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.714 ms
+
+2020-09-24T13:12:28.557Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.305 ms
+
+2020-09-24T13:12:28.559Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.318 ms
+
+2020-09-24T13:12:28.615Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.476 ms
+
+2020-09-24T13:12:28.619Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.666 ms
+
+2020-09-24T13:12:28.804Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.051 ms
+
+2020-09-24T13:12:28.854Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.929 ms
+
+2020-09-24T13:12:28.857Z  info: GET /manifest.json ::1 - - 304 - B 0.525 ms
+
+2020-09-24T13:12:34.775Z  info: GET /mylimsSamples ::1 - - 304 - B 1.711 ms
+
+2020-09-24T13:12:34.800Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.418 ms
+
+2020-09-24T13:12:34.808Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 0.748 ms
+
+2020-09-24T13:12:34.809Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.836 ms
+
+2020-09-24T13:12:34.876Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.854 ms
+
+2020-09-24T13:12:34.877Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.425 ms
+
+2020-09-24T13:12:34.878Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.416 ms
+
+2020-09-24T13:12:34.917Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.767 ms
+
+2020-09-24T13:12:34.929Z  info: GET /manifest.json ::1 - - 304 - B 0.441 ms
+
+2020-09-24T13:12:53.015Z  info: GET /mylimsSamples ::1 - - 304 - B 0.844 ms
+
+2020-09-24T13:12:53.041Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.891 ms
+
+2020-09-24T13:12:53.042Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.638 ms
+
+2020-09-24T13:12:53.044Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 3.262 ms
+
+2020-09-24T13:12:53.106Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.418 ms
+
+2020-09-24T13:12:53.109Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.493 ms
+
+2020-09-24T13:12:53.110Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.216 ms
+
+2020-09-24T13:12:53.137Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.508 ms
+
+2020-09-24T13:12:53.145Z  info: GET /manifest.json ::1 - - 304 - B 0.354 ms
+
+2020-09-24T13:12:55.169Z  info: GET / ::1 - - 304 - B 0.619 ms
+
+2020-09-24T13:12:55.194Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.562 ms
+
+2020-09-24T13:12:55.196Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.663 ms
+
+2020-09-24T13:12:55.198Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.769 ms
+
+2020-09-24T13:12:55.249Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.335 ms
+
+2020-09-24T13:12:55.254Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.501 ms
+
+2020-09-24T13:12:55.424Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.396 ms
+
+2020-09-24T13:12:55.471Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.073 ms
+
+2020-09-24T13:12:55.475Z  info: GET /manifest.json ::1 - - 304 - B 0.432 ms
+
+2020-09-24T13:12:57.061Z  info: GET / ::1 - - 304 - B 0.366 ms
+
+2020-09-24T13:12:57.081Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.567 ms
+
+2020-09-24T13:12:57.083Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.707 ms
+
+2020-09-24T13:12:57.085Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.169 ms
+
+2020-09-24T13:12:57.167Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.452 ms
+
+2020-09-24T13:12:57.169Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.699 ms
+
+2020-09-24T13:12:57.337Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.922 ms
+
+2020-09-24T13:12:57.379Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.582 ms
+
+2020-09-24T13:12:57.382Z  info: GET /manifest.json ::1 - - 304 - B 0.422 ms
+
+2020-09-24T13:12:59.633Z  info: GET /home ::1 - - 200 2305 B 0.976 ms
+
+2020-09-24T13:12:59.656Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.841 ms
+
+2020-09-24T13:12:59.658Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.575 ms
+
+2020-09-24T13:12:59.659Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.694 ms
+
+2020-09-24T13:12:59.712Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.436 ms
+
+2020-09-24T13:12:59.713Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.052 ms
+
+2020-09-24T13:12:59.892Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.440 ms
+
+2020-09-24T13:12:59.932Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.701 ms
+
+2020-09-24T13:12:59.940Z  info: GET /manifest.json ::1 - - 304 - B 0.457 ms
+
+2020-09-24T13:13:02.010Z  info: GET /profile ::1 - - 200 2305 B 1.254 ms
+
+2020-09-24T13:13:02.037Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.967 ms
+
+2020-09-24T13:13:02.040Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.798 ms
+
+2020-09-24T13:13:02.042Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.884 ms
+
+2020-09-24T13:13:02.094Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.391 ms
+
+2020-09-24T13:13:02.096Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.425 ms
+
+2020-09-24T13:13:02.299Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.491 ms
+
+2020-09-24T13:13:02.339Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.602 ms
+
+2020-09-24T13:13:02.342Z  info: GET /manifest.json ::1 - - 304 - B 0.405 ms
+
+2020-09-24T13:13:03.908Z  info: GET /users ::1 - - 200 2305 B 1.199 ms
+
+2020-09-24T13:13:03.931Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.432 ms
+
+2020-09-24T13:13:03.933Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.495 ms
+
+2020-09-24T13:13:03.934Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.261 ms
+
+2020-09-24T13:13:03.997Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.447 ms
+
+2020-09-24T13:13:04.000Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.383 ms
+
+2020-09-24T13:13:04.200Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.422 ms
+
+2020-09-24T13:13:04.241Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.549 ms
+
+2020-09-24T13:13:04.243Z  info: GET /manifest.json ::1 - - 304 - B 0.346 ms
+
+2020-09-24T13:13:06.011Z  info: GET /serviceDesk ::1 - - 200 2305 B 1.403 ms
+
+2020-09-24T13:13:06.035Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.499 ms
+
+2020-09-24T13:13:06.039Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.964 ms
+
+2020-09-24T13:13:06.040Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.424 ms
+
+2020-09-24T13:13:06.095Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.328 ms
+
+2020-09-24T13:13:06.096Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.343 ms
+
+2020-09-24T13:13:06.280Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.630 ms
+
+2020-09-24T13:13:06.326Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.553 ms
+
+2020-09-24T13:13:06.331Z  info: GET /manifest.json ::1 - - 304 - B 0.448 ms
+
+2020-09-24T13:13:07.050Z  info: GET /serviceDesk ::1 - - 304 - B 0.648 ms
+
+2020-09-24T13:13:07.077Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 5.696 ms
+
+2020-09-24T13:13:07.079Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 6.776 ms
+
+2020-09-24T13:13:07.081Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.840 ms
+
+2020-09-24T13:13:07.176Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.412 ms
+
+2020-09-24T13:13:07.178Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.370 ms
+
+2020-09-24T13:13:07.347Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.384 ms
+
+2020-09-24T13:13:07.398Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.647 ms
+
+2020-09-24T13:13:07.403Z  info: GET /manifest.json ::1 - - 304 - B 0.502 ms
+
+2020-09-24T13:13:12.612Z  info: GET /mylimsSamples ::1 - - 304 - B 0.587 ms
+
+2020-09-24T13:13:12.642Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.407 ms
+
+2020-09-24T13:13:12.646Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.531 ms
+
+2020-09-24T13:13:12.647Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.393 ms
+
+2020-09-24T13:13:12.711Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.417 ms
+
+2020-09-24T13:13:12.714Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.509 ms
+
+2020-09-24T13:13:12.715Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.499 ms
+
+2020-09-24T13:13:12.758Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.480 ms
+
+2020-09-24T13:13:12.771Z  info: GET /manifest.json ::1 - - 304 - B 0.358 ms
+
+2020-09-24T13:13:19.807Z  info: GET /serviceDesk ::1 - - 304 - B 0.858 ms
+
+2020-09-24T13:13:19.832Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.463 ms
+
+2020-09-24T13:13:19.837Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.238 ms
+
+2020-09-24T13:13:19.846Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 9.207 ms
+
+2020-09-24T13:13:19.889Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.413 ms
+
+2020-09-24T13:13:19.895Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.749 ms
+
+2020-09-24T13:13:20.096Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.663 ms
+
+2020-09-24T13:13:20.143Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.571 ms
+
+2020-09-24T13:13:20.148Z  info: GET /manifest.json ::1 - - 304 - B 0.408 ms
+
+2020-09-24T13:13:29.660Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:13:31.507Z  info: GET /serviceDesk ::1 - - 304 - B 4.342 ms
+
+2020-09-24T13:13:31.541Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 2.043 ms
+
+2020-09-24T13:13:31.545Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.933 ms
+
+2020-09-24T13:13:31.547Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.084 ms
+
+2020-09-24T13:13:31.596Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.441 ms
+
+2020-09-24T13:13:31.599Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.422 ms
+
+2020-09-24T13:13:31.813Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.934 ms
+
+2020-09-24T13:13:31.855Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.322 ms
+
+2020-09-24T13:13:31.858Z  info: GET /manifest.json ::1 - - 304 - B 0.533 ms
+
+2020-09-24T13:13:32.885Z  info: GET /serviceDesk ::1 - - 304 - B 0.631 ms
+
+2020-09-24T13:13:32.909Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.492 ms
+
+2020-09-24T13:13:32.911Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.702 ms
+
+2020-09-24T13:13:32.916Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.787 ms
+
+2020-09-24T13:13:32.972Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.527 ms
+
+2020-09-24T13:13:32.974Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.476 ms
+
+2020-09-24T13:13:33.168Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.636 ms
+
+2020-09-24T13:13:33.227Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.657 ms
+
+2020-09-24T13:13:33.230Z  info: GET /manifest.json ::1 - - 304 - B 0.435 ms
+
+2020-09-24T13:13:49.942Z  info: GET /mylimsSamples ::1 - - 304 - B 1.100 ms
+
+2020-09-24T13:13:49.962Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.500 ms
+
+2020-09-24T13:13:49.965Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.693 ms
+
+2020-09-24T13:13:49.972Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 7.189 ms
+
+2020-09-24T13:13:50.022Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.445 ms
+
+2020-09-24T13:13:50.025Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.490 ms
+
+2020-09-24T13:13:50.027Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.397 ms
+
+2020-09-24T13:13:50.070Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.830 ms
+
+2020-09-24T13:13:50.078Z  info: GET /manifest.json ::1 - - 304 - B 0.421 ms
+
+2020-09-24T13:21:02.172Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:21:06.241Z  info: GET /mylimsSamples ::1 - - 304 - B 4.093 ms
+
+2020-09-24T13:21:06.261Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.688 ms
+
+2020-09-24T13:21:06.265Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.936 ms
+
+2020-09-24T13:21:06.271Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.939 ms
+
+2020-09-24T13:21:06.314Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.462 ms
+
+2020-09-24T13:21:06.348Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.430 ms
+
+2020-09-24T13:21:06.368Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.578 ms
+
+2020-09-24T13:21:06.411Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.251 ms
+
+2020-09-24T13:21:06.424Z  info: GET /manifest.json ::1 - - 304 - B 0.503 ms
+
+2020-09-24T13:21:09.687Z  info: GET /mylimsSamples ::1 - - 304 - B 0.560 ms
+
+2020-09-24T13:21:09.706Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.496 ms
+
+2020-09-24T13:21:09.709Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.471 ms
+
+2020-09-24T13:21:09.717Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.228 ms
+
+2020-09-24T13:21:09.790Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.916 ms
+
+2020-09-24T13:21:09.834Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.648 ms
+
+2020-09-24T13:21:09.835Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.278 ms
+
+2020-09-24T13:21:09.865Z  info: GET /manifest.json ::1 - - 304 - B 0.453 ms
+
+2020-09-24T13:21:13.346Z  info: GET / ::1 - - 304 - B 0.739 ms
+
+2020-09-24T13:21:13.370Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.716 ms
+
+2020-09-24T13:21:13.374Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.707 ms
+
+2020-09-24T13:21:13.375Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.539 ms
+
+2020-09-24T13:21:13.428Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.367 ms
+
+2020-09-24T13:21:13.432Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.457 ms
+
+2020-09-24T13:21:13.604Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 304 - B 0.803 ms
+
+2020-09-24T13:21:13.606Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 304 - B 1.655 ms
+
+2020-09-24T13:21:13.610Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 304 - B 5.467 ms
+
+2020-09-24T13:21:13.617Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.434 ms
+
+2020-09-24T13:21:13.670Z  info: GET /manifest.json ::1 - - 304 - B 0.469 ms
+
+2020-09-24T13:21:24.384Z  info: GET /mylimsSamples ::1 - - 304 - B 0.865 ms
+
+2020-09-24T13:21:24.411Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.897 ms
+
+2020-09-24T13:21:24.416Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.396 ms
+
+2020-09-24T13:21:24.420Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.044 ms
+
+2020-09-24T13:21:24.505Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.566 ms
+
+2020-09-24T13:21:24.507Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.452 ms
+
+2020-09-24T13:21:24.509Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.550 ms
+
+2020-09-24T13:21:24.548Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.703 ms
+
+2020-09-24T13:21:24.556Z  info: GET /manifest.json ::1 - - 304 - B 0.397 ms
+
+2020-09-24T13:21:28.071Z  info: GET /mylimsSamples ::1 - - 304 - B 0.801 ms
+
+2020-09-24T13:21:28.094Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.437 ms
+
+2020-09-24T13:21:28.096Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.687 ms
+
+2020-09-24T13:21:28.101Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.112 ms
+
+2020-09-24T13:21:28.152Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.407 ms
+
+2020-09-24T13:21:28.155Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.036 ms
+
+2020-09-24T13:21:28.159Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.354 ms
+
+2020-09-24T13:21:28.209Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.679 ms
+
+2020-09-24T13:21:28.218Z  info: GET /manifest.json ::1 - - 304 - B 0.424 ms
+
+2020-09-24T13:21:31.721Z  info: GET / ::1 - - 304 - B 0.412 ms
+
+2020-09-24T13:21:31.742Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.450 ms
+
+2020-09-24T13:21:31.747Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.865 ms
+
+2020-09-24T13:21:31.751Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 4.529 ms
+
+2020-09-24T13:21:31.804Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.553 ms
+
+2020-09-24T13:21:31.808Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.401 ms
+
+2020-09-24T13:21:32.001Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.529 ms
+
+2020-09-24T13:21:32.046Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.489 ms
+
+2020-09-24T13:21:32.051Z  info: GET /manifest.json ::1 - - 304 - B 0.468 ms
+
+2020-09-24T13:22:36.616Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:22:49.939Z  info: GET /mylimsSamples ::1 - - 200 825 B 5.147 ms
+
+2020-09-24T13:22:49.963Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.909 ms
+
+2020-09-24T13:22:49.967Z  info: GET /static/js/runtime-main.3fd4ce3b.js ::1 - - 200 1575 B 4.508 ms
+
+2020-09-24T13:22:49.975Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 9.136 ms
+
+2020-09-24T13:22:49.982Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 10.045 ms
+
+2020-09-24T13:22:50.033Z  info: GET /static/js/runtime-main.3fd4ce3b.js.map ::1 - - 200 8288 B 1.007 ms
+
+2020-09-24T13:22:50.034Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 2.415 ms
+
+2020-09-24T13:22:50.268Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 1.120 ms
+
+2020-09-24T13:22:50.269Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 1.934 ms
+
+2020-09-24T13:22:50.271Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.301 ms
+
+2020-09-24T13:22:50.290Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 200 135540 B 1.236 ms
+
+2020-09-24T13:22:50.330Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 1.130 ms
+
+2020-09-24T13:22:50.359Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.980 ms
+
+2020-09-24T13:22:50.361Z  info: GET /manifest.json ::1 - - 304 - B 0.636 ms
+
+2020-09-24T13:23:15.282Z  info: GET /mylimsSamples ::1 - - 304 - B 1.104 ms
+
+2020-09-24T13:23:15.310Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.827 ms
+
+2020-09-24T13:23:15.313Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.691 ms
+
+2020-09-24T13:23:15.319Z  info: GET /static/js/runtime-main.3fd4ce3b.js ::1 - - 304 - B 6.401 ms
+
+2020-09-24T13:23:15.325Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 6.793 ms
+
+2020-09-24T13:23:15.466Z  info: GET /static/js/runtime-main.3fd4ce3b.js.map ::1 - - 304 - B 0.818 ms
+
+2020-09-24T13:23:15.468Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.520 ms
+
+2020-09-24T13:23:15.482Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.448 ms
+
+2020-09-24T13:23:15.633Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 304 - B 1.441 ms
+
+2020-09-24T13:23:15.635Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 304 - B 2.517 ms
+
+2020-09-24T13:23:15.643Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 304 - B 8.989 ms
+
+2020-09-24T13:23:15.683Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.517 ms
+
+2020-09-24T13:23:15.748Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.519 ms
+
+2020-09-24T13:23:15.754Z  info: GET /manifest.json ::1 - - 304 - B 0.508 ms
+
+2020-09-24T13:23:55.611Z  info: GET / ::1 - - 200 825 B 1.122 ms
+
+2020-09-24T13:23:55.636Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.527 ms
+
+2020-09-24T13:23:55.642Z  info: GET /static/js/runtime-main.3fd4ce3b.js ::1 - - 304 - B 1.126 ms
+
+2020-09-24T13:23:55.643Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.837 ms
+
+2020-09-24T13:23:55.644Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.265 ms
+
+2020-09-24T13:23:55.755Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.949 ms
+
+2020-09-24T13:23:55.757Z  info: GET /static/js/runtime-main.3fd4ce3b.js.map ::1 - - 304 - B 1.857 ms
+
+2020-09-24T13:23:55.760Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 4.161 ms
+
+2020-09-24T13:23:55.868Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 304 - B 0.808 ms
+
+2020-09-24T13:23:55.869Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 304 - B 1.403 ms
+
+2020-09-24T13:23:55.870Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 304 - B 2.494 ms
+
+2020-09-24T13:23:55.934Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.371 ms
+
+2020-09-24T13:23:55.947Z  info: GET /manifest.json ::1 - - 304 - B 0.374 ms
+
+2020-09-24T13:25:11.050Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (production)                            
+####################################################################################################
+
+2020-09-24T13:25:18.310Z  info: GET / ::1 - - 200 825 B 4.531 ms
+
+2020-09-24T13:25:18.332Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.022 ms
+
+2020-09-24T13:25:18.341Z  info: GET /static/js/runtime-main.3fd4ce3b.js ::1 - - 200 1575 B 2.370 ms
+
+2020-09-24T13:25:18.344Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 4.041 ms
+
+2020-09-24T13:25:18.351Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.785 ms
+
+2020-09-24T13:25:18.416Z  info: GET /static/js/runtime-main.3fd4ce3b.js.map ::1 - - 200 8288 B 1.804 ms
+
+2020-09-24T13:25:18.575Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.644 ms
+
+2020-09-24T13:25:18.576Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 2.242 ms
+
+2020-09-24T13:25:18.581Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 2.345 ms
+
+2020-09-24T13:25:18.597Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 200 135540 B 1.931 ms
+
+2020-09-24T13:25:18.616Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 0.974 ms
+
+2020-09-24T13:25:18.622Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 2.134 ms
+
+2020-09-24T13:25:18.681Z  info: GET /manifest.json ::1 - - 304 - B 0.549 ms
+
+2020-09-24T13:25:20.241Z  info: GET /static/media/logo.0399c5b6.svg ::1 - - 200 11623 B 1.696 ms
+
+2020-09-24T13:25:49.692Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:25:55.547Z  info: GET /mylimsSamples ::1 - - 200 825 B 6.428 ms
+
+2020-09-24T13:25:55.580Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.329 ms
+
+2020-09-24T13:25:55.585Z  info: GET /static/js/runtime-main.3fd4ce3b.js ::1 - - 304 - B 1.487 ms
+
+2020-09-24T13:25:55.591Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 6.627 ms
+
+2020-09-24T13:25:55.593Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 8.855 ms
+
+2020-09-24T13:25:55.651Z  info: GET /static/js/runtime-main.3fd4ce3b.js.map ::1 - - 304 - B 0.369 ms
+
+2020-09-24T13:25:55.664Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.409 ms
+
+2020-09-24T13:25:55.680Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.366 ms
+
+2020-09-24T13:25:55.891Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 304 - B 1.192 ms
+
+2020-09-24T13:25:55.892Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 304 - B 1.892 ms
+
+2020-09-24T13:25:55.898Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 304 - B 7.199 ms
+
+2020-09-24T13:25:55.918Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.401 ms
+
+2020-09-24T13:25:56.002Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.093 ms
+
+2020-09-24T13:25:56.007Z  info: GET /manifest.json ::1 - - 304 - B 0.909 ms
+
+2020-09-24T13:26:01.119Z  info: GET /mylimsSamples ::1 - - 200 825 B 1.685 ms
+
+2020-09-24T13:26:01.148Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 3.114 ms
+
+2020-09-24T13:26:01.149Z  info: GET /static/js/runtime-main.3fd4ce3b.js ::1 - - 200 1575 B 3.559 ms
+
+2020-09-24T13:26:01.158Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 9.115 ms
+
+2020-09-24T13:26:01.166Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 9.158 ms
+
+2020-09-24T13:26:01.594Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.221 ms
+
+2020-09-24T13:26:01.596Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 1.971 ms
+
+2020-09-24T13:26:01.600Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 1.954 ms
+
+2020-09-24T13:26:01.615Z  info: GET /static/js/runtime-main.3fd4ce3b.js.map ::1 - - 304 - B 1.356 ms
+
+2020-09-24T13:26:01.616Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 2.066 ms
+
+2020-09-24T13:26:01.618Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.936 ms
+
+2020-09-24T13:26:01.619Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.381 ms
+
+2020-09-24T13:26:01.681Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.557 ms
+
+2020-09-24T13:26:01.697Z  info: GET /manifest.json ::1 - - 304 - B 0.462 ms
+
+2020-09-24T13:26:33.240Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:26:47.536Z  info: GET /users ::1 - - 200 2305 B 7.010 ms
+
+2020-09-24T13:26:47.566Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.977 ms
+
+2020-09-24T13:26:47.568Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.268 ms
+
+2020-09-24T13:26:47.580Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.322 ms
+
+2020-09-24T13:26:47.953Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 2.178 ms
+
+2020-09-24T13:26:47.956Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 200 135540 B 2.141 ms
+
+2020-09-24T13:26:47.965Z  info: GET /manifest.json ::1 - - 304 - B 0.967 ms
+
+2020-09-24T13:26:47.967Z  info: GET /favicon.ico ::1 - - 200 1150 B 3.049 ms
+
+2020-09-24T13:26:47.987Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 2.222 ms
+
+2020-09-24T13:26:52.030Z  info: GET / ::1 - - 200 2305 B 1.233 ms
+
+2020-09-24T13:26:52.054Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.670 ms
+
+2020-09-24T13:26:52.056Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.851 ms
+
+2020-09-24T13:26:52.058Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 4.527 ms
+
+2020-09-24T13:26:52.112Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.363 ms
+
+2020-09-24T13:26:52.143Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.435 ms
+
+2020-09-24T13:26:52.157Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.726 ms
+
+2020-09-24T13:26:52.206Z  info: GET /manifest.json ::1 - - 304 - B 0.685 ms
+
+2020-09-24T13:26:55.295Z  info: GET / ::1 - - 304 - B 0.464 ms
+
+2020-09-24T13:26:55.319Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.404 ms
+
+2020-09-24T13:26:55.320Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.085 ms
+
+2020-09-24T13:26:55.326Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 8.191 ms
+
+2020-09-24T13:26:55.374Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.866 ms
+
+2020-09-24T13:26:55.378Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.696 ms
+
+2020-09-24T13:26:55.381Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.472 ms
+
+2020-09-24T13:26:55.419Z  info: GET /manifest.json ::1 - - 304 - B 0.382 ms
+
+2020-09-24T13:26:57.042Z  info: GET / ::1 - - 304 - B 1.382 ms
+
+2020-09-24T13:26:57.076Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.174 ms
+
+2020-09-24T13:26:57.077Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.342 ms
+
+2020-09-24T13:26:57.079Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 3.309 ms
+
+2020-09-24T13:26:57.131Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.325 ms
+
+2020-09-24T13:26:57.135Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.495 ms
+
+2020-09-24T13:26:57.138Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.326 ms
+
+2020-09-24T13:26:57.200Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.015 ms
+
+2020-09-24T13:26:57.215Z  info: GET /manifest.json ::1 - - 304 - B 0.538 ms
+
+2020-09-24T13:27:04.188Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.828 ms
+
+2020-09-24T13:27:04.191Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 2.765 ms
+
+2020-09-24T13:27:04.199Z  info: GET /manifest.json ::1 - - 304 - B 0.835 ms
+
+2020-09-24T13:27:04.213Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.405 ms
+
+2020-09-24T13:27:06.592Z  info: GET /mylimsSamples ::1 - - 200 2305 B 1.078 ms
+
+2020-09-24T13:27:06.614Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.421 ms
+
+2020-09-24T13:27:06.616Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.824 ms
+
+2020-09-24T13:27:06.622Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.759 ms
+
+2020-09-24T13:27:06.664Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.478 ms
+
+2020-09-24T13:27:06.705Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.573 ms
+
+2020-09-24T13:27:06.711Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.353 ms
+
+2020-09-24T13:27:06.737Z  info: GET /manifest.json ::1 - - 304 - B 0.310 ms
+
+2020-09-24T13:27:17.464Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:27:20.783Z  info: GET / ::1 - - 304 - B 3.011 ms
+
+2020-09-24T13:27:20.807Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.179 ms
+
+2020-09-24T13:27:20.811Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.958 ms
+
+2020-09-24T13:27:20.815Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 3.698 ms
+
+2020-09-24T13:27:20.886Z  info: GET /manifest.json ::1 - - 304 - B 0.456 ms
+
+2020-09-24T13:27:20.893Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.887 ms
+
+2020-09-24T13:27:20.895Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.966 ms
+
+2020-09-24T13:27:20.921Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.416 ms
+
+2020-09-24T13:27:46.913Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:29:07.952Z  info: 
+####################################################################################################
+                           Service now running on port '3030' (development)                            
+####################################################################################################
+
+2020-09-24T13:29:12.728Z  info: GET /profile ::1 - - 200 2305 B 5.395 ms
+
+2020-09-24T13:29:12.747Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 2.358 ms
+
+2020-09-24T13:29:12.748Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.825 ms
+
+2020-09-24T13:29:12.758Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 11.545 ms
+
+2020-09-24T13:29:12.776Z  info: GET /manifest.json ::1 - - 304 - B 0.998 ms
+
+2020-09-24T13:29:12.780Z  info: GET /favicon.ico ::1 - - 200 1150 B 3.886 ms
+
+2020-09-24T13:29:12.795Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.428 ms
+
+2020-09-24T13:29:12.797Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.395 ms
+
+2020-09-24T13:29:12.814Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.547 ms
+
+2020-09-24T13:29:16.781Z  info: GET /profile ::1 - - 304 - B 2.009 ms
+
+2020-09-24T13:29:16.819Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.214 ms
+
+2020-09-24T13:29:16.820Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.908 ms
+
+2020-09-24T13:29:16.833Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 13.823 ms
+
+2020-09-24T13:29:16.854Z  info: GET /manifest.json ::1 - - 304 - B 0.508 ms
+
+2020-09-24T13:29:16.862Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 1.555 ms
+
+2020-09-24T13:29:16.863Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.939 ms
+
+2020-09-24T13:29:16.865Z  info: GET /favicon.ico ::1 - - 200 1150 B 4.668 ms
+
+2020-09-24T13:29:16.866Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.529 ms
+
+2020-09-24T13:29:20.466Z  info: GET / ::1 - - 304 - B 0.671 ms
+
+2020-09-24T13:29:20.483Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.997 ms
+
+2020-09-24T13:29:20.484Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.864 ms
+
+2020-09-24T13:29:20.486Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.843 ms
+
+2020-09-24T13:29:20.516Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.446 ms
+
+2020-09-24T13:29:20.521Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.409 ms
+
+2020-09-24T13:29:20.679Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.553 ms
+
+2020-09-24T13:29:20.685Z  info: GET /manifest.json ::1 - - 304 - B 0.731 ms
+
+2020-09-24T13:29:26.055Z  info: GET /mylimsSamples ::1 - - 304 - B 1.969 ms
+
+2020-09-24T13:29:26.079Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.272 ms
+
+2020-09-24T13:29:26.080Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.730 ms
+
+2020-09-24T13:29:26.082Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 3.408 ms
+
+2020-09-24T13:29:26.114Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.484 ms
+
+2020-09-24T13:29:26.115Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.302 ms
+
+2020-09-24T13:29:26.320Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.362 ms
+
+2020-09-24T13:29:26.331Z  info: GET /manifest.json ::1 - - 304 - B 0.386 ms
+
+2020-09-24T13:29:26.333Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.957 ms
+
+2020-09-24T13:29:31.715Z  info: GET /serviceDesk ::1 - - 200 2305 B 1.643 ms
+
+2020-09-24T13:29:31.738Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.163 ms
+
+2020-09-24T13:29:31.742Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 3.518 ms
+
+2020-09-24T13:29:31.748Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 7.123 ms
+
+2020-09-24T13:29:31.774Z  info: GET /manifest.json ::1 - - 304 - B 0.544 ms
+
+2020-09-24T13:29:31.776Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.809 ms
+
+2020-09-24T13:29:31.789Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.678 ms
+
+2020-09-24T13:29:31.802Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.266 ms
+
+2020-09-24T13:29:31.804Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.771 ms
+
+2020-09-24T13:29:35.307Z  info: GET /mylimsSamples ::1 - - 304 - B 1.123 ms
+
+2020-09-24T13:29:35.323Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.168 ms
+
+2020-09-24T13:29:35.325Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.525 ms
+
+2020-09-24T13:29:35.326Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.593 ms
+
+2020-09-24T13:29:35.353Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.375 ms
+
+2020-09-24T13:29:35.360Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.478 ms
+
+2020-09-24T13:29:35.602Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.437 ms
+
+2020-09-24T13:29:35.618Z  info: GET /manifest.json ::1 - - 304 - B 0.299 ms
+
+2020-09-24T13:29:35.621Z  info: GET /favicon.ico ::1 - - 200 1150 B 3.470 ms
+
+2020-09-24T13:29:38.890Z  info: GET /home ::1 - - 200 2305 B 1.022 ms
+
+2020-09-24T13:29:38.907Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.407 ms
+
+2020-09-24T13:29:38.911Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 4.196 ms
+
+2020-09-24T13:29:38.917Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 9.707 ms
+
+2020-09-24T13:29:38.943Z  info: GET /manifest.json ::1 - - 304 - B 0.549 ms
+
+2020-09-24T13:29:38.944Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.840 ms
+
+2020-09-24T13:29:38.948Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.393 ms
+
+2020-09-24T13:29:38.960Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.991 ms
+
+2020-09-24T13:29:38.962Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.237 ms
+
+2020-09-24T13:29:44.840Z  info: GET /mylimsSamples ::1 - - 304 - B 0.959 ms
+
+2020-09-24T13:29:44.854Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.753 ms
+
+2020-09-24T13:29:44.856Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.174 ms
+
+2020-09-24T13:29:44.866Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 10.190 ms
+
+2020-09-24T13:29:44.882Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.404 ms
+
+2020-09-24T13:29:44.886Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.398 ms
+
+2020-09-24T13:29:45.124Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.341 ms
+
+2020-09-24T13:29:45.141Z  info: GET /manifest.json ::1 - - 304 - B 1.607 ms
+
+2020-09-24T13:29:45.146Z  info: GET /favicon.ico ::1 - - 200 1150 B 7.592 ms
+
+2020-09-24T13:34:31.331Z  info: 
+####################################################################################################
+                           Service now running on port '3031' (undefined)                            
+####################################################################################################
+
+2020-09-24T13:34:37.057Z  info: GET / ::1 - - 200 2305 B 4.092 ms
+
+2020-09-24T13:34:37.075Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 3.046 ms
+
+2020-09-24T13:34:37.078Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.799 ms
+
+2020-09-24T13:34:37.091Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 4.011 ms
+
+2020-09-24T13:34:37.099Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 0.879 ms
+
+2020-09-24T13:34:37.146Z  info: GET /manifest.json ::1 - - 200 284 B 1.378 ms
+
+2020-09-24T13:34:37.147Z  info: GET /favicon.ico ::1 - - 200 1150 B 3.350 ms
+
+2020-09-24T13:34:37.150Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 200 135540 B 4.023 ms
+
+2020-09-24T13:34:37.185Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 3.910 ms
+
+2020-09-24T13:35:30.534Z  info: 
+####################################################################################################
+                           Service now running on port '3031' (undefined)                            
+####################################################################################################
+
+2020-09-24T13:35:35.309Z  error: uncaughtException: Cannot read property 'stream' of undefined
+TypeError: Cannot read property 'stream' of undefined
+    at Object.<anonymous> (C:\Users\leoca\rdlsc\rdlsc\frontend\index.js:47:22)
+    at Module._compile (internal/modules/cjs/loader.js:1156:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1176:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)
+    at internal/main/run_main_module.js:18:47
+2020-09-24T13:35:44.264Z  error: uncaughtException: Cannot read property 'stream' of undefined
+TypeError: Cannot read property 'stream' of undefined
+    at Object.<anonymous> (C:\Users\leoca\rdlsc\rdlsc\frontend\index.js:47:22)
+    at Module._compile (internal/modules/cjs/loader.js:1156:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1176:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)
+    at internal/main/run_main_module.js:18:47
+2020-09-24T13:35:54.520Z  error: uncaughtException: Cannot read property 'stream' of undefined
+TypeError: Cannot read property 'stream' of undefined
+    at Object.<anonymous> (C:\Users\leoca\rdlsc\rdlsc\frontend\index.js:47:22)
+    at Module._compile (internal/modules/cjs/loader.js:1156:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1176:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)
+    at internal/main/run_main_module.js:18:47
+2020-09-24T13:36:22.970Z  error: uncaughtException: Cannot read property 'stream' of undefined
+TypeError: Cannot read property 'stream' of undefined
+    at Object.<anonymous> (C:\Users\leoca\rdlsc\rdlsc\frontend\index.js:47:22)
+    at Module._compile (internal/modules/cjs/loader.js:1156:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1176:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)
+    at internal/main/run_main_module.js:18:47
+2020-09-24T13:36:50.397Z  info: 
+####################################################################################################
+                           Service now running on port '3031' (undefined)                            
+####################################################################################################
+
+2020-09-24T13:36:54.658Z  info: GET / ::1 - - 304 - B 3.722 ms
+
+2020-09-24T13:36:54.675Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 3.442 ms
+
+2020-09-24T13:36:54.677Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 4.243 ms
+
+2020-09-24T13:36:54.682Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 7.949 ms
+
+2020-09-24T13:36:54.695Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 1.125 ms
+
+2020-09-24T13:36:54.735Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.363 ms
+
+2020-09-24T13:36:54.739Z  info: GET /manifest.json ::1 - - 304 - B 0.458 ms
+
+2020-09-24T13:36:54.755Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.440 ms
+
+2020-09-24T13:36:55.956Z  info: GET / ::1 - - 304 - B 0.688 ms
+
+2020-09-24T13:36:55.977Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.070 ms
+
+2020-09-24T13:36:55.978Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.175 ms
+
+2020-09-24T13:36:55.983Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 6.486 ms
+
+2020-09-24T13:36:56.004Z  info: GET /manifest.json ::1 - - 304 - B 1.622 ms
+
+2020-09-24T13:36:56.007Z  info: GET /favicon.ico ::1 - - 200 1150 B 4.296 ms
+
+2020-09-24T13:36:56.011Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 6.029 ms
+
+2020-09-24T13:36:56.014Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.776 ms
+
+2020-09-24T13:36:56.015Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.372 ms
+
+2020-09-24T13:36:56.620Z  info: GET / ::1 - - 304 - B 0.640 ms
+
+2020-09-24T13:36:56.635Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.800 ms
+
+2020-09-24T13:36:56.636Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.502 ms
+
+2020-09-24T13:36:56.638Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.672 ms
+
+2020-09-24T13:36:56.660Z  info: GET /manifest.json ::1 - - 304 - B 1.166 ms
+
+2020-09-24T13:36:56.662Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.171 ms
+
+2020-09-24T13:36:56.667Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.525 ms
+
+2020-09-24T13:36:56.669Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.571 ms
+
+2020-09-24T13:36:56.671Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.800 ms
+
+2020-09-24T13:36:57.352Z  info: GET / ::1 - - 304 - B 0.620 ms
+
+2020-09-24T13:36:57.369Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.225 ms
+
+2020-09-24T13:36:57.370Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.808 ms
+
+2020-09-24T13:36:57.376Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 7.349 ms
+
+2020-09-24T13:36:57.398Z  info: GET /manifest.json ::1 - - 304 - B 0.447 ms
+
+2020-09-24T13:36:57.399Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.984 ms
+
+2020-09-24T13:36:57.403Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.408 ms
+
+2020-09-24T13:36:57.405Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.354 ms
+
+2020-09-24T13:36:57.407Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.561 ms
+
+2020-09-24T13:36:57.868Z  info: GET / ::1 - - 304 - B 0.557 ms
+
+2020-09-24T13:36:57.890Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.038 ms
+
+2020-09-24T13:36:57.892Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.528 ms
+
+2020-09-24T13:36:57.897Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 6.578 ms
+
+2020-09-24T13:36:57.917Z  info: GET /manifest.json ::1 - - 304 - B 0.664 ms
+
+2020-09-24T13:36:57.919Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.677 ms
+
+2020-09-24T13:36:57.922Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.418 ms
+
+2020-09-24T13:36:57.925Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.546 ms
+
+2020-09-24T13:36:57.929Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.655 ms
+
+2020-09-24T13:36:58.173Z  info: GET / ::1 - - 304 - B 0.550 ms
+
+2020-09-24T13:36:58.194Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.090 ms
+
+2020-09-24T13:36:58.196Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.832 ms
+
+2020-09-24T13:36:58.200Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.984 ms
+
+2020-09-24T13:36:58.220Z  info: GET /manifest.json ::1 - - 304 - B 0.782 ms
+
+2020-09-24T13:36:58.223Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 3.032 ms
+
+2020-09-24T13:36:58.227Z  info: GET /favicon.ico ::1 - - 200 1150 B 7.929 ms
+
+2020-09-24T13:36:58.229Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 2.128 ms
+
+2020-09-24T13:36:58.230Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 3.656 ms
+
+2020-09-24T13:36:58.387Z  info: GET / ::1 - - 304 - B 0.496 ms
+
+2020-09-24T13:36:58.409Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.129 ms
+
+2020-09-24T13:36:58.411Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.754 ms
+
+2020-09-24T13:36:58.416Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.357 ms
+
+2020-09-24T13:36:58.433Z  info: GET /manifest.json ::1 - - 304 - B 0.619 ms
+
+2020-09-24T13:36:58.435Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.640 ms
+
+2020-09-24T13:36:58.438Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.334 ms
+
+2020-09-24T13:36:58.444Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.728 ms
+
+2020-09-24T13:36:58.446Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.748 ms
+
+2020-09-24T13:36:58.587Z  info: GET / ::1 - - 304 - B 0.792 ms
+
+2020-09-24T13:36:58.604Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.269 ms
+
+2020-09-24T13:36:58.605Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.764 ms
+
+2020-09-24T13:36:58.607Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 2.769 ms
+
+2020-09-24T13:36:58.631Z  info: GET /manifest.json ::1 - - 304 - B 0.478 ms
+
+2020-09-24T13:36:58.632Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.826 ms
+
+2020-09-24T13:36:58.635Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.405 ms
+
+2020-09-24T13:36:58.637Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.453 ms
+
+2020-09-24T13:36:58.638Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.297 ms
+
+2020-09-24T13:36:58.778Z  info: GET / ::1 - - 304 - B 0.463 ms
+
+2020-09-24T13:36:58.790Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.583 ms
+
+2020-09-24T13:36:58.792Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.678 ms
+
+2020-09-24T13:36:58.798Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.742 ms
+
+2020-09-24T13:36:58.817Z  info: GET /manifest.json ::1 - - 304 - B 0.501 ms
+
+2020-09-24T13:36:58.818Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 1.096 ms
+
+2020-09-24T13:36:58.819Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.843 ms
+
+2020-09-24T13:36:58.823Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.540 ms
+
+2020-09-24T13:36:58.827Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 4.048 ms
+
+2020-09-24T13:36:59.002Z  info: GET / ::1 - - 304 - B 0.575 ms
+
+2020-09-24T13:36:59.027Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 2.483 ms
+
+2020-09-24T13:36:59.029Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.449 ms
+
+2020-09-24T13:36:59.034Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 7.249 ms
+
+2020-09-24T13:36:59.054Z  info: GET /manifest.json ::1 - - 304 - B 0.604 ms
+
+2020-09-24T13:36:59.056Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.470 ms
+
+2020-09-24T13:36:59.058Z  info: GET /favicon.ico ::1 - - 200 1150 B 3.140 ms
+
+2020-09-24T13:36:59.063Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.632 ms
+
+2020-09-24T13:36:59.065Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.600 ms
+
+2020-09-24T13:36:59.204Z  info: GET / ::1 - - 304 - B 0.621 ms
+
+2020-09-24T13:36:59.220Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.747 ms
+
+2020-09-24T13:36:59.222Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.571 ms
+
+2020-09-24T13:36:59.223Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.416 ms
+
+2020-09-24T13:36:59.239Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.446 ms
+
+2020-09-24T13:36:59.255Z  info: GET /manifest.json ::1 - - 304 - B 0.452 ms
+
+2020-09-24T13:36:59.257Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.409 ms
+
+2020-09-24T13:36:59.266Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.602 ms
+
+2020-09-24T13:36:59.274Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.421 ms
+
+2020-09-24T13:52:46.711Z  info: GET / ::1 - - 304 - B 0.457 ms
+
+2020-09-24T13:52:46.730Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.418 ms
+
+2020-09-24T13:52:46.732Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.146 ms
+
+2020-09-24T13:52:46.736Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 6.142 ms
+
+2020-09-24T13:52:46.761Z  info: GET /manifest.json ::1 - - 304 - B 0.537 ms
+
+2020-09-24T13:52:46.764Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.473 ms
+
+2020-09-24T13:52:46.765Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.287 ms
+
+2020-09-24T13:52:46.768Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.469 ms
+
+2020-09-24T13:52:46.772Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.236 ms
+
+2020-09-24T13:57:42.731Z  info: 
+####################################################################################################
+                           Service now running on port '3031' (undefined)                            
+####################################################################################################
+
+2020-09-24T13:57:58.743Z  info: 
+####################################################################################################
+                           Service now running on port '5000' (development)                            
+####################################################################################################
+
+2020-09-24T13:58:05.097Z  info: GET /mylimsSamples ::1 - - 304 - B 4.877 ms
+
+2020-09-24T13:58:05.116Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 2.379 ms
+
+2020-09-24T13:58:05.117Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 3.066 ms
+
+2020-09-24T13:58:05.127Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 11.480 ms
+
+2020-09-24T13:58:05.155Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.475 ms
+
+2020-09-24T13:58:05.157Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.432 ms
+
+2020-09-24T13:58:05.370Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.357 ms
+
+2020-09-24T13:58:05.386Z  info: GET /manifest.json ::1 - - 304 - B 1.061 ms
+
+2020-09-24T13:58:05.392Z  info: GET /favicon.ico ::1 - - 200 1150 B 5.726 ms
+
+2020-09-24T13:58:09.545Z  info: GET /home ::1 - - 304 - B 2.231 ms
+
+2020-09-24T13:58:09.568Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.018 ms
+
+2020-09-24T13:58:09.570Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.502 ms
+
+2020-09-24T13:58:09.579Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 9.809 ms
+
+2020-09-24T13:58:09.598Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.537 ms
+
+2020-09-24T13:58:09.600Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.488 ms
+
+2020-09-24T13:58:09.763Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.474 ms
+
+2020-09-24T13:58:09.769Z  info: GET /manifest.json ::1 - - 304 - B 0.672 ms
+
+2020-09-24T13:58:09.771Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.957 ms
+
+2020-09-24T13:58:14.714Z  info: GET /mylimsSamples ::1 - - 304 - B 1.474 ms
+
+2020-09-24T13:58:14.733Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.301 ms
+
+2020-09-24T13:58:14.734Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.940 ms
+
+2020-09-24T13:58:14.740Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 7.924 ms
+
+2020-09-24T13:58:14.765Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.737 ms
+
+2020-09-24T13:58:14.767Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.353 ms
+
+2020-09-24T13:58:14.958Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.428 ms
+
+2020-09-24T13:58:14.969Z  info: GET /manifest.json ::1 - - 304 - B 0.531 ms
+
+2020-09-24T13:58:14.971Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.672 ms
+
+2020-09-24T13:58:17.134Z  info: GET /profile ::1 - - 304 - B 4.994 ms
+
+2020-09-24T13:58:17.179Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.815 ms
+
+2020-09-24T13:58:17.182Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 4.706 ms
+
+2020-09-24T13:58:17.184Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.815 ms
+
+2020-09-24T13:58:17.208Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.421 ms
+
+2020-09-24T13:58:17.210Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.542 ms
+
+2020-09-24T13:58:17.388Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.362 ms
+
+2020-09-24T13:58:17.397Z  info: GET /manifest.json ::1 - - 304 - B 0.812 ms
+
+2020-09-24T13:58:17.399Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.490 ms
+
+2020-09-24T13:58:19.766Z  info: GET /mylimsSamples ::1 - - 304 - B 0.636 ms
+
+2020-09-24T13:58:19.790Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.488 ms
+
+2020-09-24T13:58:19.796Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.241 ms
+
+2020-09-24T13:58:19.799Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 3.444 ms
+
+2020-09-24T13:58:19.853Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.419 ms
+
+2020-09-24T13:58:19.857Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.418 ms
+
+2020-09-24T13:58:20.083Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.426 ms
+
+2020-09-24T13:58:20.301Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.259 ms
+
+2020-09-24T13:58:20.308Z  info: GET /manifest.json ::1 - - 304 - B 0.393 ms
+
+2020-09-24T13:58:22.909Z  info: GET /serviceDesk ::1 - - 304 - B 0.615 ms
+
+2020-09-24T13:58:22.930Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.420 ms
+
+2020-09-24T13:58:22.934Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.674 ms
+
+2020-09-24T13:58:22.938Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 4.229 ms
+
+2020-09-24T13:58:22.990Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.453 ms
+
+2020-09-24T13:58:22.993Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.575 ms
+
+2020-09-24T13:58:23.166Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.472 ms
+
+2020-09-24T13:58:23.213Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.764 ms
+
+2020-09-24T13:58:23.218Z  info: GET /manifest.json ::1 - - 304 - B 0.380 ms
+
+2020-09-24T13:58:27.860Z  info: GET /mylimsSamples ::1 - - 304 - B 0.665 ms
+
+2020-09-24T13:58:27.884Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.462 ms
+
+2020-09-24T13:58:27.887Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.741 ms
+
+2020-09-24T13:58:27.892Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 4.296 ms
+
+2020-09-24T13:58:27.940Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.501 ms
+
+2020-09-24T13:58:27.945Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.796 ms
+
+2020-09-24T13:58:28.173Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.609 ms
+
+2020-09-24T13:58:28.228Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.962 ms
+
+2020-09-24T13:58:28.233Z  info: GET /manifest.json ::1 - - 304 - B 0.396 ms
+
+2020-09-24T13:59:57.809Z  info: GET /home ::1 - - 304 - B 0.634 ms
+
+2020-09-24T13:59:57.829Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.464 ms
+
+2020-09-24T13:59:57.831Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.619 ms
+
+2020-09-24T13:59:57.837Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.960 ms
+
+2020-09-24T13:59:57.913Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.365 ms
+
+2020-09-24T13:59:57.914Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.302 ms
+
+2020-09-24T13:59:58.091Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.452 ms
+
+2020-09-24T13:59:58.133Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.560 ms
+
+2020-09-24T13:59:58.137Z  info: GET /manifest.json ::1 - - 304 - B 0.371 ms
+
+2020-09-24T13:59:59.393Z  info: GET /users ::1 - - 304 - B 1.260 ms
+
+2020-09-24T13:59:59.422Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.392 ms
+
+2020-09-24T13:59:59.427Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.952 ms
+
+2020-09-24T13:59:59.430Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 3.901 ms
+
+2020-09-24T13:59:59.483Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.443 ms
+
+2020-09-24T13:59:59.483Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.982 ms
+
+2020-09-24T13:59:59.642Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.411 ms
+
+2020-09-24T13:59:59.690Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.312 ms
+
+2020-09-24T13:59:59.695Z  info: GET /manifest.json ::1 - - 304 - B 0.917 ms
+
+2020-09-24T14:00:00.601Z  info: GET /mylimsSamples ::1 - - 304 - B 0.673 ms
+
+2020-09-24T14:00:00.630Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 2.315 ms
+
+2020-09-24T14:00:00.633Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.163 ms
+
+2020-09-24T14:00:00.635Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.703 ms
+
+2020-09-24T14:00:00.684Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.371 ms
+
+2020-09-24T14:00:00.932Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.406 ms
+
+2020-09-24T14:00:00.953Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.648 ms
+
+2020-09-24T14:00:00.999Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.565 ms
+
+2020-09-24T14:00:01.004Z  info: GET /manifest.json ::1 - - 304 - B 0.387 ms
+
+2020-09-24T14:00:18.493Z  info: 
+####################################################################################################
+                           Service now running on port '5050' (development)                            
+####################################################################################################
+
+2020-09-24T14:00:22.835Z  info: GET / ::1 - - 200 2305 B 4.397 ms
+
+2020-09-24T14:00:22.874Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 3.247 ms
+
+2020-09-24T14:00:22.878Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.782 ms
+
+2020-09-24T14:00:22.885Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.577 ms
+
+2020-09-24T14:00:22.928Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 1.960 ms
+
+2020-09-24T14:00:22.975Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 200 135540 B 0.941 ms
+
+2020-09-24T14:00:22.987Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.163 ms
+
+2020-09-24T14:00:22.991Z  info: GET /manifest.json ::1 - - 200 284 B 0.847 ms
+
+2020-09-24T14:00:22.997Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 1.209 ms
+
+2020-09-24T14:00:26.894Z  info: GET / ::1 - - 304 - B 1.688 ms
+
+2020-09-24T14:00:26.923Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.318 ms
+
+2020-09-24T14:00:26.924Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.956 ms
+
+2020-09-24T14:00:26.931Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 7.800 ms
+
+2020-09-24T14:00:26.981Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.329 ms
+
+2020-09-24T14:00:27.027Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.514 ms
+
+2020-09-24T14:00:27.031Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.445 ms
+
+2020-09-24T14:00:27.088Z  info: GET /manifest.json ::1 - - 304 - B 0.410 ms
+
+2020-09-24T14:00:35.476Z  info: GET / ::1 - - 200 2305 B 0.980 ms
+
+2020-09-24T14:00:35.580Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.622 ms
+
+2020-09-24T14:00:35.582Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 2.552 ms
+
+2020-09-24T14:00:35.597Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 9.406 ms
+
+2020-09-24T14:00:39.265Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.626 ms
+
+2020-09-24T14:00:39.266Z  info: GET /manifest.json ::1 - - 200 284 B 1.602 ms
+
+2020-09-24T14:00:39.311Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 200 135540 B 0.905 ms
+
+2020-09-24T14:00:39.330Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 0.863 ms
+
+2020-09-24T14:00:39.331Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 1.067 ms
+
+2020-09-24T14:00:57.216Z  info: 
+####################################################################################################
+                           Service now running on port '5050' (development)                            
+####################################################################################################
+
+2020-09-24T14:01:00.362Z  info: GET / ::1 - - 304 - B 4.370 ms
+
+2020-09-24T14:01:00.380Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.917 ms
+
+2020-09-24T14:01:00.382Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 2.405 ms
+
+2020-09-24T14:01:00.387Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 0.491 ms
+
+2020-09-24T14:01:00.430Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.497 ms
+
+2020-09-24T14:01:00.475Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.591 ms
+
+2020-09-24T14:01:00.476Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.493 ms
+
+2020-09-24T14:01:01.211Z  info: GET / ::1 - - 304 - B 0.406 ms
+
+2020-09-24T14:01:01.228Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.611 ms
+
+2020-09-24T14:01:01.231Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.737 ms
+
+2020-09-24T14:01:01.237Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 6.420 ms
+
+2020-09-24T14:01:01.265Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.463 ms
+
+2020-09-24T14:01:01.271Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.016 ms
+
+2020-09-24T14:01:01.273Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.292 ms
+
+2020-09-24T14:02:05.763Z  info: 
+####################################################################################################
+                           Service now running on port '5050' (development)                            
+####################################################################################################
+
+2020-09-24T14:02:09.774Z  info: GET /signin ::1 - - 200 2305 B 8.323 ms
+
+2020-09-24T14:02:09.794Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.607 ms
+
+2020-09-24T14:02:09.797Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.245 ms
+
+2020-09-24T14:02:09.808Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.076 ms
+
+2020-09-24T14:02:10.149Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.256 ms
+
+2020-09-24T14:02:10.150Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.161 ms
+
+2020-09-24T14:02:10.154Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 4.262 ms
+
+2020-09-24T14:02:11.732Z  info: GET /signin ::1 - - 200 2305 B 0.925 ms
+
+2020-09-24T14:02:11.750Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.523 ms
+
+2020-09-24T14:02:11.752Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.008 ms
+
+2020-09-24T14:02:11.762Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 2.696 ms
+
+2020-09-24T14:02:11.899Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.726 ms
+
+2020-09-24T14:02:11.900Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.494 ms
+
+2020-09-24T14:02:11.901Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 2.343 ms
+
+2020-09-24T14:02:16.036Z  info: GET /signin ::1 - - 200 2305 B 2.854 ms
+
+2020-09-24T14:02:16.059Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.752 ms
+
+2020-09-24T14:02:16.062Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.099 ms
+
+2020-09-24T14:02:16.072Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.069 ms
+
+2020-09-24T14:02:16.191Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.749 ms
+
+2020-09-24T14:02:16.192Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.552 ms
+
+2020-09-24T14:02:16.193Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 2.431 ms
+
+2020-09-24T14:02:17.518Z  info: GET /signin ::1 - - 200 2305 B 1.235 ms
+
+2020-09-24T14:02:17.535Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.431 ms
+
+2020-09-24T14:02:17.536Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 1.809 ms
+
+2020-09-24T14:02:17.548Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 1.835 ms
+
+2020-09-24T14:02:17.663Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.748 ms
+
+2020-09-24T14:02:17.664Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.364 ms
+
+2020-09-24T14:02:17.666Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 2.785 ms
+
+2020-09-24T14:02:18.618Z  info: GET /signin ::1 - - 200 2305 B 0.952 ms
+
+2020-09-24T14:02:18.635Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.290 ms
+
+2020-09-24T14:02:18.638Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 2.552 ms
+
+2020-09-24T14:02:18.648Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 2.262 ms
+
+2020-09-24T14:02:18.758Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.823 ms
+
+2020-09-24T14:02:18.759Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.641 ms
+
+2020-09-24T14:02:18.764Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 4.811 ms
+
+2020-09-24T14:08:14.274Z  info: GET /serviceDesk ::1 - - 304 - B 3.882 ms
+
+2020-09-24T14:08:14.294Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 1.818 ms
+
+2020-09-24T14:08:14.297Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 3.930 ms
+
+2020-09-24T14:08:14.302Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 8.176 ms
+
+2020-09-24T14:08:14.324Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.536 ms
+
+2020-09-24T14:08:14.364Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.396 ms
+
+2020-09-24T14:08:14.521Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 304 - B 1.205 ms
+
+2020-09-24T14:08:14.523Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 304 - B 2.096 ms
+
+2020-09-24T14:08:14.527Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 304 - B 6.192 ms
+
+2020-09-24T14:08:14.543Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.528 ms
+
+2020-09-24T14:08:14.558Z  info: GET /favicon.ico ::1 - - 304 - B 0.532 ms
+
+2020-09-24T14:08:16.631Z  info: GET /serviceDesk ::1 - - 200 2305 B 2.801 ms
+
+2020-09-24T14:08:16.648Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 0.974 ms
+
+2020-09-24T14:08:16.651Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 1.466 ms
+
+2020-09-24T14:08:16.662Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 1.097 ms
+
+2020-09-24T14:08:16.919Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.561 ms
+
+2020-09-24T14:08:16.920Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.087 ms
+
+2020-09-24T14:08:16.921Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 2.559 ms
+
+2020-09-24T14:08:16.925Z  info: GET /favicon.ico ::1 - - 304 - B 5.795 ms
+
+2020-09-24T14:08:18.322Z  info: GET /serviceDesk ::1 - - 200 2305 B 3.414 ms
+
+2020-09-24T14:08:18.350Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.818 ms
+
+2020-09-24T14:08:18.351Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 2.540 ms
+
+2020-09-24T14:08:18.363Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 2.667 ms
+
+2020-09-24T14:08:18.506Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.413 ms
+
+2020-09-24T14:08:18.508Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.443 ms
+
+2020-09-24T14:08:18.509Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 1.673 ms
+
+2020-09-24T14:08:18.512Z  info: GET /favicon.ico ::1 - - 304 - B 2.700 ms
+
+2020-09-24T14:08:19.332Z  info: GET /serviceDesk ::1 - - 200 2305 B 1.334 ms
+
+2020-09-24T14:08:19.358Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.541 ms
+
+2020-09-24T14:08:19.359Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.170 ms
+
+2020-09-24T14:08:19.371Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.400 ms
+
+2020-09-24T14:08:19.460Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.619 ms
+
+2020-09-24T14:08:19.462Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.378 ms
+
+2020-09-24T14:08:19.467Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 5.011 ms
+
+2020-09-24T14:08:19.468Z  info: GET /favicon.ico ::1 - - 304 - B 6.311 ms
+
+2020-09-24T14:09:03.422Z  info: GET /serviceDesk ::1 - - 200 2305 B 4.522 ms
+
+2020-09-24T14:09:04.589Z  info: GET /serviceDesk ::1 - - 200 2305 B 0.711 ms
+
+2020-09-24T14:10:29.183Z  info: GET /mylimsSamples ::1 - - 200 2305 B 5.199 ms
+
+2020-09-24T14:10:30.569Z  info: GET /mylimsSamples ::1 - - 200 2305 B 0.949 ms
+
+2020-09-24T14:10:56.193Z  info: GET /mylimsSamples ::1 - - 200 2305 B 8.550 ms
+
+2020-09-24T14:10:56.957Z  info: GET /mylimsSamples ::1 - - 200 2305 B 0.650 ms
+
+2020-09-24T14:11:05.824Z  info: GET /mylimsSamples ::1 - - 200 2305 B 3.406 ms
+
+2020-09-24T14:11:09.783Z  info: GET /mylimsSamples ::1 - - 200 2305 B 0.757 ms
+
+2020-09-24T14:11:17.712Z  info: GET /serviceDesk ::1 - - 304 - B 0.580 ms
+
+2020-09-24T14:11:20.085Z  info: GET /serviceDesk ::1 - - 200 2305 B 2.437 ms
+
+2020-09-24T14:11:33.005Z  info: GET /serviceDesk ::1 - - 200 2305 B 3.765 ms
+
+2020-09-24T14:11:34.111Z  info: GET /serviceDesk ::1 - - 200 2305 B 0.833 ms
+
+2020-09-24T14:11:38.734Z  info: GET /home ::1 - - 200 2305 B 1.775 ms
+
+2020-09-24T14:12:34.835Z  info: GET /home ::1 - - 200 2305 B 3.876 ms
+
+2020-09-24T14:13:42.225Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:13:46.177Z  info: GET /home ::1 - - 200 2305 B 4.783 ms
+
+2020-09-24T14:13:46.193Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.014 ms
+
+2020-09-24T14:13:46.200Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 1.561 ms
+
+2020-09-24T14:13:46.209Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 2.204 ms
+
+2020-09-24T14:13:46.518Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.486 ms
+
+2020-09-24T14:13:46.519Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.341 ms
+
+2020-09-24T14:13:46.523Z  info: GET /favicon.ico ::1 - - 304 - B 6.173 ms
+
+2020-09-24T14:13:46.526Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.428 ms
+
+2020-09-24T14:13:56.149Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:13:57.888Z  info: GET /home ::1 - - 200 2305 B 7.133 ms
+
+2020-09-24T14:13:57.907Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.508 ms
+
+2020-09-24T14:13:57.910Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.376 ms
+
+2020-09-24T14:13:57.921Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.253 ms
+
+2020-09-24T14:13:58.232Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 2.793 ms
+
+2020-09-24T14:13:58.233Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 3.032 ms
+
+2020-09-24T14:13:58.238Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 1.859 ms
+
+2020-09-24T14:13:58.246Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.211 ms
+
+2020-09-24T14:13:58.252Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.809 ms
+
+2020-09-24T14:13:58.254Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 1.739 ms
+
+2020-09-24T14:13:58.300Z  info: GET /favicon.ico ::1 - - 304 - B 0.440 ms
+
+2020-09-24T14:14:01.294Z  info: GET /favicon.ico ::1 - - 304 - B 0.695 ms
+
+2020-09-24T14:14:02.976Z  info: GET /mylimsSamples ::1 - - 200 2305 B 0.995 ms
+
+2020-09-24T14:14:02.994Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.013 ms
+
+2020-09-24T14:14:02.997Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 0.837 ms
+
+2020-09-24T14:14:03.003Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 2.282 ms
+
+2020-09-24T14:14:03.281Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 2.035 ms
+
+2020-09-24T14:14:03.282Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 2.063 ms
+
+2020-09-24T14:14:03.284Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 4.121 ms
+
+2020-09-24T14:14:03.309Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.720 ms
+
+2020-09-24T14:14:03.311Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.551 ms
+
+2020-09-24T14:14:03.312Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 3.628 ms
+
+2020-09-24T14:14:03.365Z  info: GET /favicon.ico ::1 - - 304 - B 0.556 ms
+
+2020-09-24T14:14:04.306Z  info: GET /mylimsSamples ::1 - - 200 2305 B 1.123 ms
+
+2020-09-24T14:14:04.325Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.292 ms
+
+2020-09-24T14:14:04.327Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 2.049 ms
+
+2020-09-24T14:14:04.333Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 2.153 ms
+
+2020-09-24T14:14:04.611Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.202 ms
+
+2020-09-24T14:14:04.613Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 2.346 ms
+
+2020-09-24T14:14:04.618Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 7.033 ms
+
+2020-09-24T14:14:04.641Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.772 ms
+
+2020-09-24T14:14:04.643Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.190 ms
+
+2020-09-24T14:14:04.644Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 1.846 ms
+
+2020-09-24T14:14:04.708Z  info: GET /favicon.ico ::1 - - 304 - B 0.495 ms
+
+2020-09-24T14:20:30.936Z  info: GET /mylimsSamples ::1 - - 200 2305 B 1.448 ms
+
+2020-09-24T14:20:30.964Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.009 ms
+
+2020-09-24T14:20:30.966Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.383 ms
+
+2020-09-24T14:20:30.971Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.412 ms
+
+2020-09-24T14:20:31.015Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 1.097 ms
+
+2020-09-24T14:20:31.172Z  info: GET /static/media/logo.0399c5b6.svg ::1 - - 200 11623 B 0.736 ms
+
+2020-09-24T14:20:31.183Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 200 135540 B 2.242 ms
+
+2020-09-24T14:20:31.186Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 3.481 ms
+
+2020-09-24T14:20:31.188Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 2.113 ms
+
+2020-09-24T14:20:31.212Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 2.301 ms
+
+2020-09-24T14:20:31.244Z  info: GET /manifest.json ::1 - - 200 284 B 0.733 ms
+
+2020-09-24T14:20:31.257Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.743 ms
+
+2020-09-24T14:20:48.165Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 2.241 ms
+
+2020-09-24T14:20:53.198Z  info: GET /mylimsSamples ::1 - - 200 2305 B 0.983 ms
+
+2020-09-24T14:20:53.227Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.355 ms
+
+2020-09-24T14:20:53.228Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 1.917 ms
+
+2020-09-24T14:20:53.239Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 7.632 ms
+
+2020-09-24T14:20:53.771Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.021 ms
+
+2020-09-24T14:20:53.772Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 1.641 ms
+
+2020-09-24T14:20:53.777Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 1.624 ms
+
+2020-09-24T14:20:53.797Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.074 ms
+
+2020-09-24T14:20:53.804Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 7.439 ms
+
+2020-09-24T14:20:53.806Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.422 ms
+
+2020-09-24T14:20:53.867Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.718 ms
+
+2020-09-24T14:20:53.879Z  info: GET /manifest.json ::1 - - 304 - B 0.485 ms
+
+2020-09-24T14:20:54.842Z  info: GET /mylimsSamples ::1 - - 304 - B 2.599 ms
+
+2020-09-24T14:20:54.870Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.500 ms
+
+2020-09-24T14:20:54.872Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.574 ms
+
+2020-09-24T14:20:54.873Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 1.167 ms
+
+2020-09-24T14:20:54.926Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.387 ms
+
+2020-09-24T14:20:54.952Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.361 ms
+
+2020-09-24T14:20:55.172Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.451 ms
+
+2020-09-24T14:20:55.221Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.580 ms
+
+2020-09-24T14:20:55.226Z  info: GET /manifest.json ::1 - - 304 - B 0.396 ms
+
+2020-09-24T14:20:57.086Z  info: GET /serviceDesk ::1 - - 200 2305 B 0.842 ms
+
+2020-09-24T14:20:57.103Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.389 ms
+
+2020-09-24T14:20:57.108Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.810 ms
+
+2020-09-24T14:20:57.113Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 4.920 ms
+
+2020-09-24T14:20:57.174Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.342 ms
+
+2020-09-24T14:20:57.344Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.351 ms
+
+2020-09-24T14:20:57.361Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.388 ms
+
+2020-09-24T14:20:57.392Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.846 ms
+
+2020-09-24T14:20:57.395Z  info: GET /manifest.json ::1 - - 304 - B 0.408 ms
+
+2020-09-24T14:20:57.893Z  info: GET /serviceDesk ::1 - - 304 - B 0.574 ms
+
+2020-09-24T14:20:57.911Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.339 ms
+
+2020-09-24T14:20:57.913Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.549 ms
+
+2020-09-24T14:20:57.919Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.994 ms
+
+2020-09-24T14:20:57.962Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.357 ms
+
+2020-09-24T14:20:57.968Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.857 ms
+
+2020-09-24T14:20:58.146Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.377 ms
+
+2020-09-24T14:20:58.191Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.664 ms
+
+2020-09-24T14:20:58.197Z  info: GET /manifest.json ::1 - - 304 - B 0.596 ms
+
+2020-09-24T14:20:59.506Z  info: GET /serviceDesk ::1 - - 200 2305 B 2.149 ms
+
+2020-09-24T14:20:59.539Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.613 ms
+
+2020-09-24T14:20:59.541Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 1.959 ms
+
+2020-09-24T14:20:59.551Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 0.980 ms
+
+2020-09-24T14:20:59.781Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.279 ms
+
+2020-09-24T14:20:59.782Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 2.571 ms
+
+2020-09-24T14:20:59.787Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 6.616 ms
+
+2020-09-24T14:20:59.797Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.529 ms
+
+2020-09-24T14:20:59.805Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 8.829 ms
+
+2020-09-24T14:20:59.810Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 5.266 ms
+
+2020-09-24T14:20:59.867Z  info: GET /manifest.json ::1 - - 304 - B 0.399 ms
+
+2020-09-24T14:20:59.879Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.557 ms
+
+2020-09-24T14:23:40.633Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:23:44.465Z  info: GET /serviceDesk ::1 - - 304 - B 3.975 ms
+
+2020-09-24T14:23:44.494Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 2.273 ms
+
+2020-09-24T14:23:44.496Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 3.227 ms
+
+2020-09-24T14:23:44.503Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 9.313 ms
+
+2020-09-24T14:23:44.533Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.630 ms
+
+2020-09-24T14:23:44.712Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 304 - B 0.940 ms
+
+2020-09-24T14:23:44.714Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 304 - B 1.815 ms
+
+2020-09-24T14:23:44.720Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 304 - B 7.538 ms
+
+2020-09-24T14:23:44.728Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.793 ms
+
+2020-09-24T14:23:44.729Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.456 ms
+
+2020-09-24T14:23:44.801Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.013 ms
+
+2020-09-24T14:23:44.812Z  info: GET /manifest.json ::1 - - 304 - B 0.485 ms
+
+2020-09-24T14:23:45.663Z  info: GET /serviceDesk ::1 - - 304 - B 0.644 ms
+
+2020-09-24T14:23:45.682Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.717 ms
+
+2020-09-24T14:23:45.685Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.846 ms
+
+2020-09-24T14:23:45.691Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.822 ms
+
+2020-09-24T14:23:45.744Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.339 ms
+
+2020-09-24T14:23:45.746Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.318 ms
+
+2020-09-24T14:23:45.918Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.467 ms
+
+2020-09-24T14:23:45.956Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.006 ms
+
+2020-09-24T14:23:45.961Z  info: GET /manifest.json ::1 - - 304 - B 0.444 ms
+
+2020-09-24T14:23:48.069Z  info: GET /mylimsSamples ::1 - - 304 - B 0.910 ms
+
+2020-09-24T14:23:48.092Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.500 ms
+
+2020-09-24T14:23:48.094Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.716 ms
+
+2020-09-24T14:23:48.099Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.348 ms
+
+2020-09-24T14:23:48.150Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.465 ms
+
+2020-09-24T14:23:48.415Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.723 ms
+
+2020-09-24T14:23:48.433Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.629 ms
+
+2020-09-24T14:23:48.472Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.649 ms
+
+2020-09-24T14:23:48.477Z  info: GET /manifest.json ::1 - - 304 - B 0.410 ms
+
+2020-09-24T14:23:49.381Z  info: GET /mylimsSamples ::1 - - 304 - B 0.861 ms
+
+2020-09-24T14:23:49.406Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.457 ms
+
+2020-09-24T14:23:49.409Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 0.696 ms
+
+2020-09-24T14:23:49.415Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 5.642 ms
+
+2020-09-24T14:23:49.458Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.362 ms
+
+2020-09-24T14:23:49.707Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.649 ms
+
+2020-09-24T14:23:49.724Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.403 ms
+
+2020-09-24T14:23:49.747Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.800 ms
+
+2020-09-24T14:23:49.755Z  info: GET /manifest.json ::1 - - 304 - B 2.802 ms
+
+2020-09-24T14:23:50.983Z  info: GET /mylimsSamples ::1 - - 200 2305 B 4.184 ms
+
+2020-09-24T14:23:51.021Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.306 ms
+
+2020-09-24T14:23:51.023Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 2.724 ms
+
+2020-09-24T14:23:51.030Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 2.373 ms
+
+2020-09-24T14:23:51.518Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.965 ms
+
+2020-09-24T14:23:51.519Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.740 ms
+
+2020-09-24T14:23:51.524Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 6.167 ms
+
+2020-09-24T14:23:51.536Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.696 ms
+
+2020-09-24T14:23:51.546Z  info: GET /manifest.json ::1 - - 304 - B 0.383 ms
+
+2020-09-24T14:29:38.352Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:29:43.086Z  info: GET /mylimsSamples ::1 - - 200 2305 B 7.072 ms
+
+2020-09-24T14:29:43.112Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 3.304 ms
+
+2020-09-24T14:29:43.115Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 4.168 ms
+
+2020-09-24T14:29:43.127Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.964 ms
+
+2020-09-24T14:29:43.829Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.442 ms
+
+2020-09-24T14:29:43.831Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.442 ms
+
+2020-09-24T14:29:43.836Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 7.655 ms
+
+2020-09-24T14:29:43.849Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.744 ms
+
+2020-09-24T14:29:43.858Z  info: GET /manifest.json ::1 - - 304 - B 0.472 ms
+
+2020-09-24T14:29:45.099Z  info: GET /mylimsSamples ::1 - - 200 2305 B 2.490 ms
+
+2020-09-24T14:29:45.135Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.760 ms
+
+2020-09-24T14:29:45.137Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 4.342 ms
+
+2020-09-24T14:29:45.144Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 4.651 ms
+
+2020-09-24T14:29:45.262Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.890 ms
+
+2020-09-24T14:29:45.264Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.197 ms
+
+2020-09-24T14:29:45.270Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 8.464 ms
+
+2020-09-24T14:29:45.272Z  info: GET /manifest.json ::1 - - 304 - B 0.331 ms
+
+2020-09-24T14:29:45.274Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.962 ms
+
+2020-09-24T14:29:50.013Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:29:52.272Z  info: GET /mylimsSamples ::1 - - 200 2305 B 6.920 ms
+
+2020-09-24T14:29:52.301Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.730 ms
+
+2020-09-24T14:29:52.304Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 4.556 ms
+
+2020-09-24T14:29:52.310Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 4.511 ms
+
+2020-09-24T14:29:52.473Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 1.258 ms
+
+2020-09-24T14:29:52.690Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.426 ms
+
+2020-09-24T14:29:52.692Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 2.316 ms
+
+2020-09-24T14:29:52.693Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 2.395 ms
+
+2020-09-24T14:29:52.715Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.716 ms
+
+2020-09-24T14:29:52.720Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 5.463 ms
+
+2020-09-24T14:29:52.787Z  info: GET /favicon.ico ::1 - - 200 1150 B 4.492 ms
+
+2020-09-24T14:29:52.794Z  info: GET /manifest.json ::1 - - 304 - B 0.738 ms
+
+2020-09-24T14:29:56.722Z  info: GET /mylimsSamples ::1 - - 200 2305 B 1.057 ms
+
+2020-09-24T14:29:56.751Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.642 ms
+
+2020-09-24T14:29:56.752Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 2.719 ms
+
+2020-09-24T14:29:56.759Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 1.507 ms
+
+2020-09-24T14:29:57.026Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 0.891 ms
+
+2020-09-24T14:29:57.028Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 2.118 ms
+
+2020-09-24T14:29:57.034Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 2.760 ms
+
+2020-09-24T14:29:57.054Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.975 ms
+
+2020-09-24T14:29:57.055Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.315 ms
+
+2020-09-24T14:29:57.058Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.474 ms
+
+2020-09-24T14:29:57.131Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.576 ms
+
+2020-09-24T14:29:57.141Z  info: GET /manifest.json ::1 - - 304 - B 0.513 ms
+
+2020-09-24T14:29:59.592Z  info: GET /serviceDesk ::1 - - 200 2305 B 1.086 ms
+
+2020-09-24T14:29:59.617Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.141 ms
+
+2020-09-24T14:29:59.619Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.329 ms
+
+2020-09-24T14:29:59.625Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.454 ms
+
+2020-09-24T14:29:59.890Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.632 ms
+
+2020-09-24T14:29:59.892Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 2.447 ms
+
+2020-09-24T14:29:59.898Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 7.722 ms
+
+2020-09-24T14:29:59.910Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.132 ms
+
+2020-09-24T14:29:59.911Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 2.075 ms
+
+2020-09-24T14:29:59.913Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 3.431 ms
+
+2020-09-24T14:29:59.971Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.461 ms
+
+2020-09-24T14:29:59.982Z  info: GET /manifest.json ::1 - - 304 - B 0.830 ms
+
+2020-09-24T14:30:00.588Z  info: GET /serviceDesk ::1 - - 200 2305 B 0.770 ms
+
+2020-09-24T14:30:00.613Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.608 ms
+
+2020-09-24T14:30:00.617Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 4.250 ms
+
+2020-09-24T14:30:00.624Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 4.064 ms
+
+2020-09-24T14:30:00.865Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.892 ms
+
+2020-09-24T14:30:00.867Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 2.454 ms
+
+2020-09-24T14:30:00.872Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 2.701 ms
+
+2020-09-24T14:30:00.881Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.864 ms
+
+2020-09-24T14:30:00.888Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 7.423 ms
+
+2020-09-24T14:30:00.890Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.395 ms
+
+2020-09-24T14:30:00.941Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.646 ms
+
+2020-09-24T14:30:00.953Z  info: GET /manifest.json ::1 - - 304 - B 0.502 ms
+
+2020-09-24T14:30:34.386Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:30:38.592Z  info: GET /serviceDesk ::1 - - 200 2305 B 9.498 ms
+
+2020-09-24T14:30:38.614Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.113 ms
+
+2020-09-24T14:30:38.661Z  info: GET /manifest.json ::1 - - 304 - B 1.034 ms
+
+2020-09-24T14:30:38.664Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.449 ms
+
+2020-09-24T14:30:38.671Z  info: GET /favicon.ico ::1 - - 200 1150 B 7.386 ms
+
+2020-09-24T14:30:42.822Z  info: GET /serviceDesk ::1 - - 304 - B 2.872 ms
+
+2020-09-24T14:30:42.854Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.459 ms
+
+2020-09-24T14:30:42.901Z  info: GET /manifest.json ::1 - - 304 - B 0.612 ms
+
+2020-09-24T14:30:42.905Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.952 ms
+
+2020-09-24T14:30:42.910Z  info: GET /favicon.ico ::1 - - 200 1150 B 5.159 ms
+
+2020-09-24T14:31:25.719Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:31:28.319Z  info: GET /serviceDesk ::1 - - 200 2305 B 4.744 ms
+
+2020-09-24T14:31:28.342Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 1.108 ms
+
+2020-09-24T14:31:28.387Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 4.120 ms
+
+2020-09-24T14:31:28.388Z  info: GET /manifest.json ::1 - - 304 - B 4.371 ms
+
+2020-09-24T14:31:28.391Z  info: GET /favicon.ico ::1 - - 200 1150 B 5.120 ms
+
+2020-09-24T14:31:29.555Z  info: GET /serviceDesk ::1 - - 200 2305 B 1.115 ms
+
+2020-09-24T14:31:29.575Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 0.813 ms
+
+2020-09-24T14:31:29.614Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.378 ms
+
+2020-09-24T14:31:29.623Z  info: GET /manifest.json ::1 - - 304 - B 0.505 ms
+
+2020-09-24T14:31:29.625Z  info: GET /favicon.ico ::1 - - 200 1150 B 2.466 ms
+
+2020-09-24T14:42:04.458Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:43:53.545Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:47:18.964Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:47:22.654Z  info: GET /serviceDesk ::1 - - 200 2305 B 4.585 ms
+
+2020-09-24T14:47:22.677Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 3.137 ms
+
+2020-09-24T14:47:22.679Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 3.723 ms
+
+2020-09-24T14:47:22.692Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 3.587 ms
+
+2020-09-24T14:47:22.759Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.846 ms
+
+2020-09-24T14:47:22.777Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.707 ms
+
+2020-09-24T14:47:22.778Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 1.482 ms
+
+2020-09-24T14:47:22.809Z  info: GET /manifest.json ::1 - - 304 - B 0.561 ms
+
+2020-09-24T14:47:22.820Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.917 ms
+
+2020-09-24T14:47:26.717Z  info: GET /serviceDesk ::1 - - 304 - B 0.797 ms
+
+2020-09-24T14:47:26.741Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 304 - B 0.524 ms
+
+2020-09-24T14:47:26.745Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 304 - B 1.245 ms
+
+2020-09-24T14:47:26.752Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 304 - B 7.216 ms
+
+2020-09-24T14:47:26.815Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.430 ms
+
+2020-09-24T14:47:26.842Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 0.326 ms
+
+2020-09-24T14:47:26.856Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 0.406 ms
+
+2020-09-24T14:47:26.911Z  info: GET /manifest.json ::1 - - 304 - B 0.434 ms
+
+2020-09-24T14:49:13.147Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:49:18.872Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:49:20.508Z  info: GET /serviceDesk ::1 - - 200 2305 B 6.415 ms
+
+2020-09-24T14:49:20.532Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.290 ms
+
+2020-09-24T14:49:20.535Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 2.962 ms
+
+2020-09-24T14:49:20.551Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 2.803 ms
+
+2020-09-24T14:49:21.135Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.572 ms
+
+2020-09-24T14:49:21.137Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 3.296 ms
+
+2020-09-24T14:49:21.143Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 3.152 ms
+
+2020-09-24T14:49:21.154Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 2.309 ms
+
+2020-09-24T14:49:21.159Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 7.451 ms
+
+2020-09-24T14:49:21.162Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.475 ms
+
+2020-09-24T14:49:21.228Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.723 ms
+
+2020-09-24T14:49:21.234Z  info: GET /manifest.json ::1 - - 304 - B 0.495 ms
+
+2020-09-24T14:49:23.879Z  info: GET /mylimsSamples ::1 - - 200 2305 B 0.859 ms
+
+2020-09-24T14:49:23.904Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 2.045 ms
+
+2020-09-24T14:49:23.907Z  info: GET /static/js/main.eb020509.chunk.js ::1 - - 200 57790 B 4.100 ms
+
+2020-09-24T14:49:23.918Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 4.173 ms
+
+2020-09-24T14:49:24.194Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 0.805 ms
+
+2020-09-24T14:49:24.195Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 2.162 ms
+
+2020-09-24T14:49:24.196Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.173 ms
+
+2020-09-24T14:49:24.222Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 304 - B 1.578 ms
+
+2020-09-24T14:49:24.228Z  info: GET /static/js/main.eb020509.chunk.js.map ::1 - - 304 - B 6.115 ms
+
+2020-09-24T14:49:24.230Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 304 - B 0.412 ms
+
+2020-09-24T14:49:24.319Z  info: GET /favicon.ico ::1 - - 200 1150 B 0.676 ms
+
+2020-09-24T14:49:24.324Z  info: GET /manifest.json ::1 - - 304 - B 0.438 ms
+
+2020-09-24T14:55:21.606Z  info: 
+####################################################################################################
+                           Service now running on port '5051' (development)                            
+####################################################################################################
+
+2020-09-24T14:55:26.388Z  info: GET /mylimsSamples ::1 - - 200 2305 B 4.930 ms
+
+2020-09-24T14:55:26.431Z  info: GET /static/js/main.f9fbe750.chunk.js ::1 - - 200 57858 B 4.324 ms
+
+2020-09-24T14:55:26.433Z  info: GET /static/css/2.47271137.chunk.css ::1 - - 200 3377 B 4.748 ms
+
+2020-09-24T14:55:26.442Z  info: GET /static/js/2.39b7692d.chunk.js ::1 - - 200 1155255 B 5.961 ms
+
+2020-09-24T14:55:26.514Z  info: GET /static/css/2.47271137.chunk.css.map ::1 - - 200 5589 B 0.689 ms
+
+2020-09-24T14:55:26.709Z  info: GET /static/media/roboto-latin-400.479970ff.woff2 ::1 - - 200 15736 B 1.863 ms
+
+2020-09-24T14:55:26.710Z  info: GET /static/media/roboto-latin-500.020c97dc.woff2 ::1 - - 200 15872 B 2.522 ms
+
+2020-09-24T14:55:26.715Z  info: GET /static/media/roboto-latin-700.2735a3a6.woff2 ::1 - - 200 15816 B 1.097 ms
+
+2020-09-24T14:55:26.742Z  info: GET /static/js/main.f9fbe750.chunk.js.map ::1 - - 200 135683 B 1.686 ms
+
+2020-09-24T14:55:26.789Z  info: GET /static/js/2.39b7692d.chunk.js.map ::1 - - 200 4817969 B 1.582 ms
+
+2020-09-24T14:55:26.836Z  info: GET /favicon.ico ::1 - - 200 1150 B 1.491 ms
+
+2020-09-24T14:55:26.851Z  info: GET /manifest.json ::1 - - 304 - B 0.671 ms
+

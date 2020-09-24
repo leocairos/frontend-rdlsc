@@ -1,5 +1,5 @@
 import React, { createContext, useCallback, useState, useContext } from 'react';
-import { api, apiGLPI } from '../services/api';
+import { api } from '../services/api';
 
 interface IUser {
   id: string;
@@ -47,20 +47,33 @@ const AuthProvider: React.FC = ({ children }) => {
       password,
     }); */
 
-    const response = await apiGLPI.get('/initSession', {
+    /* const response = await apiGLPI.get('/initSession', {
       headers: {
         Authorization: 'test-value',
       },
-    });
+    }); */
 
-    const { token, user } = response.data;
+    // const { token, user } = response.data;
 
-    localStorage.setItem('@rdlscfrontend:token', token);
-    localStorage.setItem('@rdlscfrontend:user', JSON.stringify(user));
+    if (email === 'mail@mail.com' && password === 'Password123') {
+      const { token, user } = {
+        token: 'mytoken12345',
+        user: {
+          id: '01',
+          name: 'UserName',
+          email: 'mail@domain.com',
+          avatar_url: '',
+          role: 'admin',
+        },
+      };
 
-    api.defaults.headers.authorization = `Bearer ${token}`;
+      localStorage.setItem('@rdlscfrontend:token', token);
+      localStorage.setItem('@rdlscfrontend:user', JSON.stringify(user));
 
-    setData({ token, user });
+      api.defaults.headers.authorization = `Bearer ${token}`;
+
+      setData({ token, user });
+    }
   }, []);
 
   const signOut = useCallback(() => {
