@@ -66,8 +66,12 @@ rdlsc-web
 * Instalar node
 
 * clonar repositorio do git dentro do servidor
-* $ yarn
-* $ yarn build
+  * $ cd app
+  * $ git clone https://github.com/leocairos/frontend-rdlsc.git
+* gerar build
+  * $ cd frontend-rdlsc
+  * $ yarn
+  * $ yarn build
 
 * ajustar .env
   * $ cp .env.example .env
