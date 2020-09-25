@@ -61,6 +61,24 @@ rdlsc-web
 
 * deploy Google Cloud
 
+### Deploy on CPanel server (js static)
+
+* step 1:"homepage": ".", -->add this on package.json file
+* step 2 : npm run build --> this will create a build folder.
+* step 3 : make a .htaccess it will look like this
+
+```
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+</IfModule>
+```
+
 ### Deploy Frontend at node server
 
 * Instalar node

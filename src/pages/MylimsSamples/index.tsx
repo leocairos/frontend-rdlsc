@@ -8,7 +8,27 @@ import MUIDataTable, {
 
 import { format } from 'date-fns';
 
-import { Button, CircularProgress, Typography } from '@material-ui/core';
+import DateFnsUtils from '@date-io/date-fns';
+import {
+  MuiPickersUtilsProvider,
+  KeyboardDatePicker,
+} from '@material-ui/pickers';
+
+import {
+  Button,
+  Checkbox,
+  CircularProgress,
+  FormControl,
+  FormControlLabel,
+  FormGroup,
+  FormLabel,
+  InputLabel,
+  ListItemText,
+  MenuItem,
+  Select,
+  TextField,
+  Typography,
+} from '@material-ui/core';
 
 import PageContainer from '../../components/common/PageContainer';
 
@@ -69,6 +89,7 @@ const formatedData = async (
 const MyLIMsSamples: React.FC = () => {
   const [data, setData] = useState<IDataSample[]>([{}]);
   const [isLoading, setIsLoading] = useState(true);
+  const [ageFilterChecked, setAgeFilterChecked] = useState(false);
   const [count, setCount] = useState(0);
   const [page, setPage] = useState<number>(0);
   const [filterData, setFilterData] = useState('');
@@ -79,6 +100,12 @@ const MyLIMsSamples: React.FC = () => {
   const [sampleStatusFilter, setSampleStatusFilter] = useState([]);
   const [sampleConclusionFilter, setSampleConclusionFilter] = useState([]);
   const [takenDateFilter, setTakenDateFilter] = useState<string[]>([]);
+
+  const [selectedDate, setSelectedDate] = useState(new Date('2014-08-18'));
+
+  const handleDateChange = date => {
+    setSelectedDate(date);
+  };
 
   const getDataApi = useCallback(
     async (pageNum: number, pageSize: number, orderby?: string) => {
@@ -152,6 +179,105 @@ const MyLIMsSamples: React.FC = () => {
       label: 'Tipo de Amostra',
       options: {
         filter: true,
+        filterType: 'custom' as FilterType,
+        customFilterListOptions: {
+          render: v => {
+            if (v[0] && v[1] && ageFilterChecked) {
+              return [`Coleta desde: ${v[0]}`, `Coleta até: ${v[1]}`];
+            }
+            if (v[0] && v[1] && !ageFilterChecked) {
+              return `Coleta desde: ${v[0]}, Coleta até: ${v[1]}`;
+            }
+            if (v[0]) {
+              return `Coleta desde: ${v[0]}`;
+            }
+            if (v[1]) {
+              return `Coleta até: ${v[1]}`;
+            }
+            return [];
+          },
+          update: (filterList, filterPos, index) => {
+            console.log(
+              'customFilterListOnDelete: ',
+              filterList,
+              filterPos,
+              index,
+            );
+
+            if (filterPos === 0) {
+              filterList[index].splice(filterPos, 1, '');
+            } else if (filterPos === 1) {
+              filterList[index].splice(filterPos, 1);
+            } else if (filterPos === -1) {
+              filterList[index] = [];
+            }
+
+            console.log(
+              'update customFilterListOnDelete: ',
+              filterList,
+              filterPos,
+              index,
+            );
+            return filterList;
+          },
+        },
+        filterOptions: {
+          names: [],
+          logic(age, filters) {
+            if (filters[0] && filters[1]) {
+              return age < filters[0] || age > filters[1];
+            }
+            if (filters[0]) {
+              return age < filters[0];
+            }
+            if (filters[1]) {
+              return age > filters[1];
+            }
+            return false;
+          },
+          display: (filterList, onChange, index, column) => (
+            <div>
+              <FormLabel>Data Coleta</FormLabel>
+              <FormGroup row>
+                <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                  <KeyboardDatePicker
+                    margin="normal"
+                    id="date-picker-dialog"
+                    label="Date picker dialog"
+                    format="MM/dd/yyyy"
+                    value={selectedDate}
+                    onChange={handleDateChange}
+                    KeyboardButtonProps={{
+                      'aria-label': 'change date',
+                    }}
+                  />
+                </MuiPickersUtilsProvider>
+                <TextField
+                  label="Desde"
+                  value={filterList[index][0] || ''}
+                  onChange={event => {
+                    filterList[index][0] = event.target.value;
+                    onChange(filterList[index], index, column);
+                  }}
+                  style={{ width: '45%', marginRight: '5%' }}
+                />
+                <TextField
+                  label="Até"
+                  value={filterList[index][1] || ''}
+                  onChange={event => {
+                    filterList[index][1] = event.target.value;
+                    onChange(filterList[index], index, column);
+                  }}
+                  style={{ width: '45%' }}
+                />
+              </FormGroup>
+            </div>
+          ),
+        },
+        print: false,
+      },
+      /* options: {
+        filter: true,
         sort: true,
         customFilterListOptions: {
           render: (v: string) => `Tipo de Amostra: ${v}`,
@@ -159,7 +285,7 @@ const MyLIMsSamples: React.FC = () => {
         filterOptions: {
           names: sampleTypesFilter,
         },
-      },
+      }, */
     },
     {
       name: 'collection_point',
