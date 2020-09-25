@@ -11,16 +11,6 @@ const apiGLPI = axios.create({
   baseURL: process.env.REACT_APP_GLPI_API_URL,
 });
 
-const apiMyLIMs = axios.create({
-  baseURL: process.env.REACT_APP_MYLIMS_URL,
-  headers: {
-    'x-access-key': process.env.REACT_APP_MYLIMS_TOKEN,
-  },
-  validateStatus: status => {
-    return status >= 200 && status < 300; // default
-  },
-});
-
 const apiXiloliteCQ = axios.create({
   baseURL: process.env.REACT_APP_API_CQ_URL,
   headers: {
@@ -28,4 +18,4 @@ const apiXiloliteCQ = axios.create({
   },
 });
 
-export { api, apiGLPI, apiMyLIMs, apiXiloliteCQ };
+export { api, apiGLPI, apiXiloliteCQ };

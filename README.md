@@ -45,7 +45,7 @@ rdlsc-web
     - The Visual Workspace - Communicate visually at the speed of thought.
       * Flowcharts / Wireframes / Sticky Notes / Mind Maps
 
-## Deploy Frontend
+## Deploy Frontend on Netlify
 
 * criar .env
 * adicionar no  .gitignore
