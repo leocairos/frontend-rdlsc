@@ -52,7 +52,7 @@ export const PublicFooter: React.FC = () => {
     <footer className={classes.footer}>
       <Typography align="left">
         <PhoneIcon />
-        75 3023 8733
+        99 9999-9999
         <MailOutlineIcon className={classes.svg} />
         contato@rdlsc.com
       </Typography>

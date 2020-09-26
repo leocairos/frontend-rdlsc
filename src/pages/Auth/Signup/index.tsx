@@ -6,7 +6,6 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers';
 import {
   Button,
-  CssBaseline,
   TextField,
   Grid,
   Container,
@@ -31,81 +30,9 @@ interface ISignUpFormData {
   password_confirmation: string;
 }
 
-const useStyles = makeStyles(theme => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(3),
-  },
-  submit: {
-    backgroundColor: '#3483CB',
-    width: '35%',
-    height: '50px',
-    fontSize: '16px',
-    color: '#fff',
-    '&:hover': {
-      backgroundColor: '#183f73',
-    },
-  },
-  alignmentButtonSubmit: {
-    textAlign: 'right',
-  },
-  submitDependent: {
-    margin: theme.spacing(3, 0, 2),
-    backgroundColor: '#183f73',
-    color: '#fff',
-    fontSize: '12px',
-    fontWeight: 'normal',
-    '&:hover': {
-      backgroundColor: '#3483CB',
-    },
-  },
-  buttonDelDependent: {
-    margin: theme.spacing(3, 0, 2),
-    backgroundColor: '#183f73',
-    width: '50%',
-  },
-  field: {
-    backgroundColor: '#FFFAFA',
-  },
-  title: {
-    margin: theme.spacing(1, 0),
-    fontSize: '16px',
-  },
-  titleDependent: {
-    marginTop: theme.spacing(6),
-    marginBottom: theme.spacing(1),
-    fontSize: '16px',
-  },
-  group: {
-    marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2),
-    padding: theme.spacing(2),
-    border: '1px solid',
-    borderColor: '#DCDCDC',
-    backgroundColor: '#fafafa',
-  },
-  content: {
-    padding: theme.spacing(6),
-  },
-  drawer: {
-    [theme.breakpoints.up('sm')]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-  },
-}));
-
 const SignUp: React.FC = () => {
   const { addToast } = useToast();
   const history = useHistory();
-
-  const classes = useStyles();
 
   const schema = yup.object().shape({
     name: yup.string().required('Nome obrigatório'),
@@ -124,6 +51,7 @@ const SignUp: React.FC = () => {
   const onSubmit = useCallback(
     async (data: ISignUpFormData) => {
       try {
+        console.log(data);
         await api.post('users', data);
 
         history.push('/');
@@ -134,7 +62,7 @@ const SignUp: React.FC = () => {
       } catch (err) {
         addToast({
           type: 'error',
-          title: 'Erro no cadastro',
+          title: 'onSubmit: Erro no cadastro',
           description: `${err.response.data.message}`,
         });
       }
@@ -146,7 +74,7 @@ const SignUp: React.FC = () => {
     <>
       <PublicHeader />
 
-      <Container component="main" fixed className={classes.content}>
+      <Container component="main" fixed>
         <h3>Novo Cadastro</h3>
 
         <p>
@@ -154,91 +82,56 @@ const SignUp: React.FC = () => {
           entrada.
         </p>
 
-        <CssBaseline />
-        <div className={classes.paper}>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <Grid container spacing={1}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  error={!!errors.name}
-                  helperText={errors.name?.message}
-                  name="name"
-                  variant="outlined"
-                  label="Nome"
-                  inputRef={register}
-                  fullWidth
-                  autoFocus
-                  className={classes.field}
-                />
-              </Grid>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <TextField
+            error={!!errors.name}
+            helperText={errors.name?.message}
+            name="name"
+            variant="outlined"
+            label="Nome"
+            inputRef={register}
+            fullWidth
+            autoFocus
+          />
+          <TextField
+            error={!!errors.email}
+            helperText={errors.email?.message}
+            name="email"
+            variant="outlined"
+            fullWidth
+            id="email"
+            label="Email"
+            inputRef={register}
+          />
+          <TextField
+            error={!!errors.password}
+            helperText={errors.password?.message}
+            name="password"
+            variant="outlined"
+            fullWidth
+            id="password"
+            label="Senha"
+            type="password"
+            inputRef={register}
+          />
+          <TextField
+            error={!!errors.password_confirmation}
+            helperText={errors.password_confirmation?.message}
+            name="password_confirmation"
+            variant="outlined"
+            fullWidth
+            id="password_confirmation"
+            label="Confirmar senha"
+            type="password"
+            inputRef={register}
+          />
 
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  error={!!errors.email}
-                  helperText={errors.email?.message}
-                  name="email"
-                  variant="outlined"
-                  fullWidth
-                  id="email"
-                  label="Email"
-                  inputRef={register}
-                  className={classes.field}
-                />
-              </Grid>
+          <Button type="submit" variant="contained">
+            Confirmar cadastro
+          </Button>
+        </form>
 
-              <Grid item xs={12} sm={3}>
-                <TextField
-                  error={!!errors.password}
-                  helperText={errors.password?.message}
-                  name="password"
-                  variant="outlined"
-                  fullWidth
-                  id="password"
-                  label="Senha"
-                  type="password"
-                  inputRef={register}
-                  className={classes.field}
-                />
-              </Grid>
-
-              <Grid item xs={12} sm={3}>
-                <TextField
-                  error={!!errors.password_confirmation}
-                  helperText={errors.password_confirmation?.message}
-                  name="password_confirmation"
-                  variant="outlined"
-                  fullWidth
-                  id="password_confirmation"
-                  label="Confirmar senha"
-                  type="password"
-                  inputRef={register}
-                  className={classes.field}
-                />
-              </Grid>
-            </Grid>
-
-            <Grid
-              className={classes.alignmentButtonSubmit}
-              item
-              xs={12}
-              sm={12}
-            >
-              <Button
-                type="submit"
-                variant="contained"
-                className={classes.submit}
-              >
-                Confirmar cadastro
-              </Button>
-            </Grid>
-          </form>
-
-          <Grid container>
-            <Grid item>
-              <Link href="/signin">Voltar para login</Link>
-            </Grid>
-          </Grid>
-        </div>
+        <Link href="/signin">Voltar para login</Link>
       </Container>
 
       <PublicFooter />

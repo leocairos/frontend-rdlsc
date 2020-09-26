@@ -1,11 +1,11 @@
-import styled, { keyframes } from 'styled-components'
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
   height: 100vh;
   display: flex;
   align-items: stretch;
   padding: 40px;
-`
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -53,7 +53,7 @@ export const Content = styled.div`
     margin-top: 30px;
     color: #000;
   }
-`
+`;
 
 const appearFromLeft = keyframes`
   from{
@@ -64,7 +64,7 @@ const appearFromLeft = keyframes`
     opacity: 1;
     transform: translateX(0);
   }
-`
+`;
 
 export const AnimationContainer = styled.div`
   display: flex;
@@ -106,4 +106,4 @@ export const AnimationContainer = styled.div`
       margin-right: 16px;
     }
   }
-`
+`;

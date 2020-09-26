@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
-import { TextField } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers';
@@ -92,7 +92,9 @@ const ResetPassword: React.FC = () => {
               inputRef={register}
             />
 
-            <button type="submit">Alterar senha</button>
+            <Button type="submit" variant="contained">
+              Alterar senha
+            </Button>
           </form>
         </AnimationContainer>
       </Content>

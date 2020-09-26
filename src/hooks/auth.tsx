@@ -42,10 +42,10 @@ const AuthProvider: React.FC = ({ children }) => {
   });
 
   const signIn = useCallback(async ({ email, password }) => {
-    /* const response = await api.post('/sessions', {
+    const response = await api.post('/sessions', {
       email,
       password,
-    }); */
+    });
 
     /* const response = await apiGLPI.get('/initSession', {
       headers: {
@@ -53,9 +53,9 @@ const AuthProvider: React.FC = ({ children }) => {
       },
     }); */
 
-    // const { token, user } = response.data;
+    const { token, user } = response.data;
 
-    if (email === 'mail@mail.com' && password === 'Password123') {
+    /* if (email === 'mail@mail.com' && password === 'Password123') {
       const { token, user } = {
         token: 'mytoken12345',
         user: {
@@ -65,15 +65,14 @@ const AuthProvider: React.FC = ({ children }) => {
           avatar_url: '',
           role: 'admin',
         },
-      };
+      }; */
 
-      localStorage.setItem('@rdlscfrontend:token', token);
-      localStorage.setItem('@rdlscfrontend:user', JSON.stringify(user));
+    localStorage.setItem('@rdlscfrontend:token', token);
+    localStorage.setItem('@rdlscfrontend:user', JSON.stringify(user));
 
-      api.defaults.headers.authorization = `Bearer ${token}`;
+    api.defaults.headers.authorization = `Bearer ${token}`;
 
-      setData({ token, user });
-    }
+    setData({ token, user });
   }, []);
 
   const signOut = useCallback(() => {

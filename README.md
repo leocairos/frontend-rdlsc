@@ -45,6 +45,9 @@ rdlsc-web
     - The Visual Workspace - Communicate visually at the speed of thought.
       * Flowcharts / Wireframes / Sticky Notes / Mind Maps
 
+* Run cache cleaned
+  * $ yarn start --reset-cache
+
 ## Deploy Frontend on Netlify
 
 * criar .env
@@ -121,3 +124,7 @@ RewriteRule . /index.html [L]
 
 ## Git Flow
   * usar develop sempre
+
+  * git add .
+  * git commit -m "comment implementation"
+  * git push origin *branch*

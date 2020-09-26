@@ -24,8 +24,11 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import { apiXiloliteCQ } from '../../services/api';
+import IconButton from '@material-ui/core/IconButton';
+import Tooltip from '@material-ui/core/Tooltip';
+import AddIcon from '@material-ui/icons/Add';
 import PageContainer from '../../components/common/PageContainer';
+import { apiXiloliteCQ } from '../../services/api';
 
 interface IAuxiliar {
   value: string;
@@ -542,16 +545,27 @@ const MyLIMsSamples: React.FC = () => {
     textLabels: {
       body: {
         noMatch: 'Desculpe, não há registros para exibir!',
+        toolTip: 'Ordenar',
+        columnHeaderTooltip: column => `Ordenar por ${column.label}`,
       },
       filter: {
         all: 'Todos os registros',
         title: 'Filtros',
         reset: 'Limpar filtros',
       },
+      toolbar: {
+        search: 'Localizar',
+        downloadCsv: 'Download CSV',
+        print: 'Imprimir',
+        viewColumns: 'Exibir Colunas',
+        filterTable: 'Filtrar registros',
+      },
+      viewColumns: {
+        title: 'Exibir colunas',
+        titleAria: 'Exibir/Ocultar colunas',
+      },
       selectedRows: {
-        text: 'rows has been deleted',
-        delete: 'Delete Row',
-        deleteAria: 'Deleted Selected Rows',
+        text: 'Registros selecionados',
       },
     },
 
@@ -613,6 +627,18 @@ const MyLIMsSamples: React.FC = () => {
         allExpanded,
         rowsExpanded,
       ), */
+
+    customToolbar: () => {
+      return (
+        <>
+          <Tooltip title="custom icon">
+            <IconButton onClick={() => console.log('clicked +')}>
+              <AddIcon />
+            </IconButton>
+          </Tooltip>
+        </>
+      );
+    },
   };
 
   const titleTable = (
