@@ -129,7 +129,7 @@ const MyLIMsSamples: React.FC = () => {
 
   const getDataApi = useCallback(
     async (pageNum: number, pageSize: number, orderby?: string) => {
-      let urlGet = `/samplesHeader?page=${pageNum}&pageSize=${pageSize}`;
+      let urlGet = `/samples/samplesHeader?page=${pageNum}&pageSize=${pageSize}`;
       urlGet += `&filters=${filterData}`;
       urlGet += `&orderby=${orderby || sortOrder}`;
 
@@ -141,7 +141,7 @@ const MyLIMsSamples: React.FC = () => {
   );
 
   const getDataApiAnalysis = useCallback(async (sampleId: number) => {
-    const urlGet = `/samples/${sampleId}/analysis`;
+    const urlGet = `/samples/samples/${sampleId}/analysis`;
 
     // console.log(urlGet);
     const response = await apiXiloliteCQ.get(urlGet);
@@ -177,22 +177,22 @@ const MyLIMsSamples: React.FC = () => {
 
   const loadFilters = useCallback(async (): Promise<void> => {
     apiXiloliteCQ
-      .get('/filterByTable?fieldTable=sample_type')
+      .get('/samples/filterByTable?fieldTable=sample_type')
       .then(res => res.data.data.map((t: IAuxiliar) => t.value))
       .then(dataAuxiliar => setSampleTypesFilter(dataAuxiliar || []));
 
     apiXiloliteCQ
-      .get('/filterByTable?fieldTable=collection_point')
+      .get('/samples/filterByTable?fieldTable=collection_point')
       .then(res => res.data.data.map((t: IAuxiliar) => t.value))
       .then(dataAuxiliar => setCollectionPointsFilter(dataAuxiliar || []));
 
     apiXiloliteCQ
-      .get('/filterByTable?fieldTable=sample_status')
+      .get('/samples/filterByTable?fieldTable=sample_status')
       .then(res => res.data.data.map((t: IAuxiliar) => t.value))
       .then(dataAuxiliar => setSampleStatusFilter(dataAuxiliar || []));
 
     apiXiloliteCQ
-      .get('/filterByTable?fieldTable=sample_conclusion')
+      .get('/samples/filterByTable?fieldTable=sample_conclusion')
       .then(res => res.data.data.map((t: IAuxiliar) => t.value))
       .then(dataAuxiliar => setSampleConclusionFilter(dataAuxiliar || []));
 

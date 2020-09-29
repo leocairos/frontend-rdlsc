@@ -4,24 +4,25 @@ import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers';
-import {
-  Button,
-  TextField,
-  Grid,
-  Container,
-  makeStyles,
-  Link,
-} from '@material-ui/core';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
 import {
-  PublicFooter,
-  PublicHeader,
-} from '../../../components/layout/PublicHeaderFooter';
+  Avatar,
+  Button,
+  CssBaseline,
+  TextField,
+  Box,
+  Grid,
+  Link,
+  Typography,
+  Container,
+} from '@material-ui/core';
 
 import { api } from '../../../services/api';
 import { useToast } from '../../../hooks/toast';
 
-const drawerWidth = 0;
+import useStyles from '../../../components/layout/useStyles';
+import Copyright from '../../../components/layout/Copyright';
 
 interface ISignUpFormData {
   name: string;
@@ -31,6 +32,7 @@ interface ISignUpFormData {
 }
 
 const SignUp: React.FC = () => {
+  const classes = useStyles();
   const { addToast } = useToast();
   const history = useHistory();
 
@@ -51,7 +53,7 @@ const SignUp: React.FC = () => {
   const onSubmit = useCallback(
     async (data: ISignUpFormData) => {
       try {
-        console.log(data);
+        // console.log(data);
         await api.post('users', data);
 
         history.push('/');
@@ -71,71 +73,105 @@ const SignUp: React.FC = () => {
   );
 
   return (
-    <>
-      <PublicHeader />
-
-      <Container component="main" fixed>
-        <h3>Novo Cadastro</h3>
-
-        <p>
-          Lembre-se de fornecer um e-mail válidos, ele será sua chave de
-          entrada.
-        </p>
-
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <TextField
-            error={!!errors.name}
-            helperText={errors.name?.message}
-            name="name"
-            variant="outlined"
-            label="Nome"
-            inputRef={register}
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Cadastrar-se
+        </Typography>
+        <form
+          className={classes.form}
+          onSubmit={handleSubmit(onSubmit)}
+          noValidate
+        >
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                id="name"
+                label="Nome"
+                name="name"
+                autoComplete="name"
+                autoFocus
+                error={!!errors.name}
+                helperText={errors.name?.message}
+                inputRef={register}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                id="email"
+                label="Email"
+                name="email"
+                autoComplete="email"
+                autoFocus
+                error={!!errors.email}
+                helperText={errors.email?.message}
+                inputRef={register}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="current-password"
+                error={!!errors.password}
+                helperText={errors.password?.message}
+                inputRef={register}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                name="password_confirmation"
+                label="Confirmar senha"
+                type="password"
+                id="password_confirmation"
+                error={!!errors.password_confirmation}
+                helperText={errors.password_confirmation?.message}
+                inputRef={register}
+              />
+            </Grid>
+          </Grid>
+          <Button
+            type="submit"
             fullWidth
-            autoFocus
-          />
-          <TextField
-            error={!!errors.email}
-            helperText={errors.email?.message}
-            name="email"
-            variant="outlined"
-            fullWidth
-            id="email"
-            label="Email"
-            inputRef={register}
-          />
-          <TextField
-            error={!!errors.password}
-            helperText={errors.password?.message}
-            name="password"
-            variant="outlined"
-            fullWidth
-            id="password"
-            label="Senha"
-            type="password"
-            inputRef={register}
-          />
-          <TextField
-            error={!!errors.password_confirmation}
-            helperText={errors.password_confirmation?.message}
-            name="password_confirmation"
-            variant="outlined"
-            fullWidth
-            id="password_confirmation"
-            label="Confirmar senha"
-            type="password"
-            inputRef={register}
-          />
-
-          <Button type="submit" variant="contained">
+            variant="contained"
+            color="primary"
+            className={classes.submit}
+          >
             Confirmar cadastro
           </Button>
         </form>
-
-        <Link href="/signin">Voltar para login</Link>
-      </Container>
-
-      <PublicFooter />
-    </>
+        <Grid container>
+          <Grid item xs>
+            <Link href="/signin">Voltar para login</Link>
+          </Grid>
+        </Grid>
+        <Box mt={5}>
+          <Copyright />
+        </Box>
+      </div>
+    </Container>
   );
 };
 

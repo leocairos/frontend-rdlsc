@@ -1,15 +1,18 @@
 import React, { useCallback, useState } from 'react';
 
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+
 import {
+  Avatar,
   Button,
   CssBaseline,
   TextField,
-  Link,
+  Box,
   Grid,
-  makeStyles,
-  Container,
-  LinearProgress,
+  Link,
   Typography,
+  LinearProgress,
+  Container,
 } from '@material-ui/core';
 
 import { useHistory } from 'react-router-dom';
@@ -17,58 +20,14 @@ import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers';
-import logoImg from '../../../assets/logo.svg';
+import useStyles from '../../../components/layout/useStyles';
+import Copyright from '../../../components/layout/Copyright';
 import { api } from '../../../services/api';
 import { useToast } from '../../../hooks/toast';
-
-const drawerWidth = 0;
 
 interface IForgotPasswordFormData {
   email: string;
 }
-
-const useStyles = makeStyles(theme => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  logo: {
-    marginTop: theme.spacing(5),
-    marginBottom: theme.spacing(5),
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(5),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-    color: '#fafafa',
-    backgroundColor: '#3483CB',
-  },
-  drawer: {
-    [theme.breakpoints.up('sm')]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-  },
-  // necessary for content to be below app bar
-  toolbar: theme.mixins.toolbar,
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  appBar: {
-    [theme.breakpoints.up('sm')]: {
-      width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
-      backgroundColor: '#183f73',
-    },
-  },
-  field: {
-    backgroundColor: '#FFFAFA',
-  },
-}));
 
 const ForgotPassword: React.FC = () => {
   const classes = useStyles();
@@ -114,56 +73,56 @@ const ForgotPassword: React.FC = () => {
   );
 
   return (
-    <>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <div className={classes.paper}>
-          <img className={classes.logo} src={logoImg} alt="Logo" />
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Recuperar senha
+        </Typography>
+        <form
+          className={classes.form}
+          onSubmit={handleSubmit(onSubmit)}
+          noValidate
+        >
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email"
+            name="email"
+            autoComplete="email"
+            autoFocus
+            error={!!errors.email}
+            helperText={errors.email?.message}
+            inputRef={register}
+          />
 
-          <Typography component="h1" variant="h3">
-            Recuperar senha
-          </Typography>
-
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className={classes.form}
-            noValidate
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
           >
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email"
-              name="email"
-              autoComplete="email"
-              autoFocus
-              error={!!errors.email}
-              helperText={errors.email?.message}
-              inputRef={register}
-              className={classes.field}
-            />
-
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className={classes.submit}
-            >
-              Recuperar
-            </Button>
-            {loading && <LinearProgress />}
-          </form>
-          <Grid container>
-            <Grid item>
-              <Link href="/signin">Voltar para login</Link>
-            </Grid>
+            Recuperar senha
+          </Button>
+          {loading && <LinearProgress />}
+        </form>
+        <Grid container>
+          <Grid item xs>
+            <Link href="/signin">Voltar para login</Link>
           </Grid>
-        </div>
-      </Container>
-    </>
+        </Grid>
+        <Box mt={5}>
+          <Copyright />
+        </Box>
+      </div>
+    </Container>
   );
 };
 

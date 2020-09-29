@@ -1,15 +1,18 @@
 import React, { useCallback } from 'react';
+
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+
 import {
+  Avatar,
   Button,
   CssBaseline,
   TextField,
-  Grid,
-  makeStyles,
   Container,
+  Box,
+  Grid,
   Link,
+  Typography,
 } from '@material-ui/core';
-
-import Typography from '@material-ui/core/Typography';
 
 import { useHistory } from 'react-router-dom';
 
@@ -17,69 +20,15 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers';
 
-import logoImg from '../../../assets/logo.svg';
-
 import { useAuth } from '../../../hooks/auth';
 import { useToast } from '../../../hooks/toast';
-
-const drawerWidth = 0;
+import useStyles from '../../../components/layout/useStyles';
+import Copyright from '../../../components/layout/Copyright';
 
 interface ISignInFormData {
   email: string;
   password: string;
 }
-
-const useStyles = makeStyles(theme => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  logo: {
-    marginTop: theme.spacing(5),
-    marginBottom: theme.spacing(5),
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(5),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-    color: '#fafafa',
-    backgroundColor: '#3483CB',
-    '&:hover': {
-      backgroundColor: '#183f73',
-    },
-  },
-  content: {
-    padding: theme.spacing(7),
-  },
-  logoHeader: {
-    margin: theme.spacing(0.5),
-  },
-  drawer: {
-    [theme.breakpoints.up('sm')]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-  },
-  // necessary for content to be below app bar
-  toolbar: theme.mixins.toolbar,
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  appBar: {
-    [theme.breakpoints.up('sm')]: {
-      width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
-      backgroundColor: '#183f73',
-    },
-  },
-  field: {
-    backgroundColor: '#FFFAFA',
-  },
-}));
 
 const SignIn: React.FC = () => {
   const classes = useStyles();
@@ -120,73 +69,75 @@ const SignIn: React.FC = () => {
   );
 
   return (
-    <>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <div className={classes.paper}>
-          <img className={classes.logo} width={200} src={logoImg} alt="Logo" />
-
-          <Typography component="h1" variant="h3">
-            Login
-          </Typography>
-
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className={classes.form}
-            noValidate
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Entrar
+        </Typography>
+        <form
+          className={classes.form}
+          onSubmit={handleSubmit(onSubmit)}
+          noValidate
+        >
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email"
+            name="email"
+            autoComplete="email"
+            autoFocus
+            error={!!errors.email}
+            helperText={errors.email?.message}
+            inputRef={register}
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            name="password"
+            label="Password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+            error={!!errors.password}
+            helperText={errors.password?.message}
+            inputRef={register}
+          />
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
           >
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email"
-              name="email"
-              autoComplete="email"
-              autoFocus
-              error={!!errors.email}
-              helperText={errors.email?.message}
-              inputRef={register}
-              className={classes.field}
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Senha"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-              error={!!errors.password}
-              helperText={errors.password?.message}
-              inputRef={register}
-              className={classes.field}
-            />
-
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className={classes.submit}
-            >
-              Entrar
-            </Button>
-          </form>
-          <Grid container>
-            <Grid item xs>
-              <Link href="/forgot-password">Esqueci minha senha</Link>
-            </Grid>
-            <Grid item>
-              <Link href="/signup">Criar conta</Link>
-            </Grid>
+            Entrar
+          </Button>
+        </form>
+        <Grid container>
+          <Grid item xs>
+            <Link href="/forgot-password" variant="body2">
+              Esqueci minha senha
+            </Link>
           </Grid>
-        </div>
-      </Container>
-    </>
+          <Grid item>
+            <Link href="/signup" variant="body2">
+              Criar conta
+            </Link>
+          </Grid>
+        </Grid>
+        <Box mt={5}>
+          <Copyright />
+        </Box>
+      </div>
+    </Container>
   );
 };
 
