@@ -29,6 +29,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import AddIcon from '@material-ui/icons/Add';
 import PageContainer from '../../components/common/PageContainer';
 import { apiXiloliteCQ } from '../../services/api';
+import { useToast } from '../../hooks/toast';
 
 interface IAuxiliar {
   value: string;
@@ -107,6 +108,7 @@ const formatedData = async (
 };
 
 const MyLIMsSamples: React.FC = () => {
+  const { addToast } = useToast();
   const [data, setData] = useState<IDataSample[]>([{}]);
   const [isLoading, setIsLoading] = useState(true);
   const [count, setCount] = useState(0);
@@ -140,13 +142,24 @@ const MyLIMsSamples: React.FC = () => {
     [filterData, sortOrder],
   );
 
-  const getDataApiAnalysis = useCallback(async (sampleId: number) => {
-    const urlGet = `/samples/samples/${sampleId}/analysis`;
+  const getDataApiAnalysis = useCallback(
+    async (sampleId: number) => {
+      const urlGet = `/samples/samples/${sampleId}/analysis`;
 
-    // console.log(urlGet);
-    const response = await apiXiloliteCQ.get(urlGet);
-    return response.data;
-  }, []);
+      // console.log(urlGet);
+      try {
+        const response = await apiXiloliteCQ.get(urlGet);
+        return response.data;
+      } catch (err) {
+        addToast({
+          type: 'error',
+          title: 'Erro na autenticação',
+          description: `${err.response.data.message}`,
+        });
+      }
+    },
+    [addToast],
+  );
 
   const getNewData = useCallback(
     async (pageNum: number) => {
@@ -163,41 +176,59 @@ const MyLIMsSamples: React.FC = () => {
 
   const loadSamples = useCallback(
     async (defaultPage?: number): Promise<void> => {
-      setIsLoading(true);
-      const dataAPI = await getDataApi(defaultPage || 1, rowsPerPage);
-      const dataLoaded = await formatedData(dataAPI.samples);
+      try {
+        setIsLoading(true);
+        const dataAPI = await getDataApi(defaultPage || 1, rowsPerPage);
+        const dataLoaded = await formatedData(dataAPI.samples);
 
-      setData(dataLoaded);
-      setCount(dataAPI.total);
-      setPage(Number(dataAPI.page));
-      setIsLoading(false);
+        setData(dataLoaded);
+        setCount(dataAPI.total);
+        setPage(Number(dataAPI.page));
+        setIsLoading(false);
+      } catch (err) {
+        setIsLoading(false);
+        addToast({
+          type: 'error',
+          title: 'Erro ao carregar registros',
+          description: `${err.response.data.message}`,
+        });
+      }
     },
-    [getDataApi],
+    [addToast, getDataApi],
   );
 
   const loadFilters = useCallback(async (): Promise<void> => {
-    apiXiloliteCQ
-      .get('/samples/filterByTable?fieldTable=sample_type')
-      .then(res => res.data.data.map((t: IAuxiliar) => t.value))
-      .then(dataAuxiliar => setSampleTypesFilter(dataAuxiliar || []));
+    try {
+      apiXiloliteCQ
+        .get('/samples/filterByTable?fieldTable=sample_type')
+        .then(res => res.data.data.map((t: IAuxiliar) => t.value))
+        .then(dataAuxiliar => setSampleTypesFilter(dataAuxiliar || []));
 
-    apiXiloliteCQ
-      .get('/samples/filterByTable?fieldTable=collection_point')
-      .then(res => res.data.data.map((t: IAuxiliar) => t.value))
-      .then(dataAuxiliar => setCollectionPointsFilter(dataAuxiliar || []));
+      apiXiloliteCQ
+        .get('/samples/filterByTable?fieldTable=collection_point')
+        .then(res => res.data.data.map((t: IAuxiliar) => t.value))
+        .then(dataAuxiliar => setCollectionPointsFilter(dataAuxiliar || []));
 
-    apiXiloliteCQ
-      .get('/samples/filterByTable?fieldTable=sample_status')
-      .then(res => res.data.data.map((t: IAuxiliar) => t.value))
-      .then(dataAuxiliar => setSampleStatusFilter(dataAuxiliar || []));
+      apiXiloliteCQ
+        .get('/samples/filterByTable?fieldTable=sample_status')
+        .then(res => res.data.data.map((t: IAuxiliar) => t.value))
+        .then(dataAuxiliar => setSampleStatusFilter(dataAuxiliar || []));
 
-    apiXiloliteCQ
-      .get('/samples/filterByTable?fieldTable=sample_conclusion')
-      .then(res => res.data.data.map((t: IAuxiliar) => t.value))
-      .then(dataAuxiliar => setSampleConclusionFilter(dataAuxiliar || []));
+      apiXiloliteCQ
+        .get('/samples/filterByTable?fieldTable=sample_conclusion')
+        .then(res => res.data.data.map((t: IAuxiliar) => t.value))
+        .then(dataAuxiliar => setSampleConclusionFilter(dataAuxiliar || []));
 
-    setUpdatedAtFilter(['Hoje', 'Últimas 24h', 'Últimas 48h', 'Últimas 72h']);
-  }, []);
+      setUpdatedAtFilter(['Hoje', 'Últimas 24h', 'Últimas 48h', 'Últimas 72h']);
+    } catch (err) {
+      setIsLoading(false);
+      addToast({
+        type: 'error',
+        title: 'Erro ao carregar registros',
+        description: `${err.response.data.message}`,
+      });
+    }
+  }, [addToast]);
 
   useEffect(() => {
     loadFilters();

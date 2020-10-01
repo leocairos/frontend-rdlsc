@@ -29,11 +29,11 @@ const Routes: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [isTimedOut, setIsTimedOut] = useState(false);
 
-  const onAction = useCallback(e => {
+  const onAction = useCallback(() => {
     setIsTimedOut(false);
   }, []);
 
-  const onActive = useCallback(e => {
+  const onActive = useCallback(() => {
     setIsTimedOut(false);
   }, []);
 

@@ -32,6 +32,8 @@ export const IdleTimeOutModal = ({
   useEffect(() => {
     if (showModal && idleTime > 0) {
       setTimeout(() => setIdleTime(idleTime - 1), 1000);
+    } else {
+      setIdleTime(myTimeOutPar);
     }
   }, [idleTime, showModal]);
 

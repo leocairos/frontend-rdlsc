@@ -1,5 +1,5 @@
 import React, { createContext, useCallback, useState, useContext } from 'react';
-import { api } from '../services/api';
+import { api, apiXiloliteCQ } from '../services/api';
 
 interface IUser {
   id: string;
@@ -35,6 +35,7 @@ const AuthProvider: React.FC = ({ children }) => {
 
     if (token && user) {
       api.defaults.headers.authorization = `Bearer ${token}`;
+      apiXiloliteCQ.defaults.headers.authorization = `Bearer ${token}`;
       return { token, user: JSON.parse(user) };
     }
 
@@ -47,30 +48,13 @@ const AuthProvider: React.FC = ({ children }) => {
       password,
     });
 
-    /* const response = await apiGLPI.get('/initSession', {
-      headers: {
-        Authorization: 'test-value',
-      },
-    }); */
-
     const { token, user } = response.data;
-
-    /* if (email === 'mail@mail.com' && password === 'Password123') {
-      const { token, user } = {
-        token: 'mytoken12345',
-        user: {
-          id: '01',
-          name: 'UserName',
-          email: 'mail@domain.com',
-          avatar_url: '',
-          role: 'admin',
-        },
-      }; */
 
     localStorage.setItem('@rdlscfrontend:token', token);
     localStorage.setItem('@rdlscfrontend:user', JSON.stringify(user));
 
     api.defaults.headers.authorization = `Bearer ${token}`;
+    apiXiloliteCQ.defaults.headers.authorization = `Bearer ${token}`;
 
     setData({ token, user });
   }, []);
