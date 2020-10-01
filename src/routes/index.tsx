@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import { Switch, BrowserRouter } from 'react-router-dom';
+import IdleTimer from 'react-idle-timer';
 
 import Route from './Route';
+
+import { IdleTimeOutModal } from '../components/layout/IdleTimeOutModal';
+
+import { useAuth } from '../hooks/auth';
 
 import SignIn from '../pages/Auth/Signin';
 import SignUp from '../pages/Auth/Signup';
@@ -16,8 +21,56 @@ import Profile from '../pages/Profile';
 import Users from '../pages/Users';
 
 const Routes: React.FC = () => {
+  const { user, signOut } = useAuth();
+
+  const timeout = Number(process.env.REACT_APP_INACTIVE_TIMEOUT) * 1000;
+
+  const [idleTimer, setIdleTimer] = useState<IdleTimer | null>();
+  const [showModal, setShowModal] = useState(false);
+  const [isTimedOut, setIsTimedOut] = useState(false);
+
+  const onAction = useCallback(e => {
+    setIsTimedOut(false);
+  }, []);
+
+  const onActive = useCallback(e => {
+    setIsTimedOut(false);
+  }, []);
+
+  const onIdle = useCallback(() => {
+    if (isTimedOut) {
+      signOut();
+      window.location.reload();
+    } else if (user) {
+      setShowModal(true);
+      idleTimer?.reset();
+      setIsTimedOut(true);
+    }
+  }, [idleTimer, isTimedOut, signOut, user]);
+
+  const handleClose = useCallback(() => {
+    setShowModal(false);
+  }, []);
+
+  const handleLogout = useCallback(() => {
+    setShowModal(false);
+    signOut();
+    window.location.reload();
+  }, [signOut]);
+
   return (
     <BrowserRouter>
+      <IdleTimer
+        ref={ref => {
+          setIdleTimer(ref);
+        }}
+        element={document}
+        onActive={onActive}
+        onIdle={onIdle}
+        onAction={onAction}
+        debounce={250}
+        timeout={timeout}
+      />
       <Switch>
         {/* Public Routes */}
         <Route path="/signin" component={SignIn} />
@@ -36,6 +89,11 @@ const Routes: React.FC = () => {
         {/* Default redirect to Home */}
         <Route path="/" component={Home} isPrivate />
       </Switch>
+      <IdleTimeOutModal
+        showModal={showModal}
+        handleClose={handleClose}
+        handleLogout={handleLogout}
+      />
     </BrowserRouter>
   );
 };

@@ -11,11 +11,11 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 
-export interface DashboardProps {
+export interface IDashboardProps {
   children?: any;
 }
 
-export default function Dashboard({ children }: DashboardProps) {
+export default function Dashboard({ children }: IDashboardProps) {
   const classes = useStyles();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
