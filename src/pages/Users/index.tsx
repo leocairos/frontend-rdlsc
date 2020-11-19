@@ -2,28 +2,18 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import MUIDataTable, { Responsive, SelectableRows } from 'mui-datatables';
 
-import { CircularProgress, Typography } from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add';
+import {
+  Avatar,
+  CircularProgress,
+  IconButton,
+  Tooltip,
+  Typography,
+} from '@material-ui/core';
 
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import PageContainer from '../../components/common/PageContainer';
 import { apiXiloliteCQ } from '../../services/api';
 import { useToast } from '../../hooks/toast';
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    modal: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    paper: {
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
-    },
-  }),
-);
 
 interface IDataUser {
   id?: number;
@@ -39,7 +29,9 @@ const Users: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [count, setCount] = useState(0);
   const [page, setPage] = useState<number>(0);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [filterData, setFilterData] = useState('');
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [sortOrder, setSortOrder] = useState('updated_at desc');
   const rowsPerPage = 50;
 
@@ -49,9 +41,9 @@ const Users: React.FC = () => {
       urlGet += `&filters=${filterData}`;
       urlGet += `&orderby=${orderby || sortOrder}`;
 
-      console.log(urlGet);
+      // console.log(urlGet);
       const response = await apiXiloliteCQ.get(urlGet);
-      console.log(response);
+      // console.log(response);
       return response.data;
     },
     [filterData, sortOrder],
@@ -153,10 +145,20 @@ const Users: React.FC = () => {
     },
     {
       name: 'avatar_ur',
-      label: 'URl Avatar',
+      label: 'Avatar',
       options: {
-        filter: true,
-        sort: true,
+        filter: false,
+        sort: false,
+        customBodyRenderLite: (dataIndex, rowIndex) => {
+          console.log(data[dataIndex].name, data[dataIndex].avatar_url);
+
+          return (
+            <Avatar
+              alt={data[dataIndex].name}
+              src={data[dataIndex].avatar_url}
+            />
+          );
+        },
       },
     },
   ];
@@ -173,11 +175,23 @@ const Users: React.FC = () => {
 
     pagination: false,
     tableBodyHeight: `${Math.trunc(Number(window.innerHeight * 0.7))}px`,
+
+    customToolbar: () => {
+      return (
+        <>
+          <Tooltip title="Incluir registro">
+            <IconButton onClick={() => console.log('clicked +')}>
+              <AddIcon />
+            </IconButton>
+          </Tooltip>
+        </>
+      );
+    },
   };
 
   const titleTable = (
     <Typography variant="h5">
-      Amostras{' '}
+      Usuários{' '}
       {!isLoading && (
         <span style={{ fontSize: 15, position: 'relative', top: -2 }}>
           ({new Intl.NumberFormat().format(data.length)} de{' '}

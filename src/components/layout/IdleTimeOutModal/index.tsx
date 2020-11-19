@@ -1,24 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
-import { Button, createStyles, makeStyles, Theme } from '@material-ui/core';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    modal: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    paper: {
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
-    },
-  }),
-);
+import Logout from '@material-ui/icons/ExitToApp';
+import Stay from '@material-ui/icons/Home';
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Paper,
+} from '@material-ui/core';
+
+import Draggable from 'react-draggable';
+
+const PaperComponent = props => {
+  return (
+    <Draggable
+      handle="#draggable-dialog-title"
+      cancel={'[class*="MuiDialogContent-root"]'}
+    >
+      <Paper {...props} />
+    </Draggable>
+  );
+};
 
 const myTimeOutPar = Number(process.env.REACT_APP_INACTIVE_TIMEOUT);
 export const IdleTimeOutModal = ({
@@ -26,7 +31,6 @@ export const IdleTimeOutModal = ({
   handleClose,
   handleLogout,
 }): any => {
-  const classes = useStyles();
   const [idleTime, setIdleTime] = useState(myTimeOutPar);
 
   useEffect(() => {
@@ -38,32 +42,29 @@ export const IdleTimeOutModal = ({
   }, [idleTime, showModal]);
 
   return (
-    <Modal
-      aria-labelledby="transition-modal-title"
-      aria-describedby="transition-modal-description"
-      className={classes.modal}
-      open={showModal}
-      onClose={handleClose}
-      closeAfterTransition
-      BackdropComponent={Backdrop}
-      BackdropProps={{
-        timeout: 500,
-      }}
-    >
-      <Fade in={showModal}>
-        <div className={classes.paper}>
-          <h3>You Have Been Idle!</h3>
-          <h5>You Will Get Timed Out. You want to stay?</h5>
-
-          <Button variant="contained" onClick={handleLogout}>
+    <div>
+      <Dialog
+        open={showModal}
+        onClose={handleClose}
+        PaperComponent={PaperComponent}
+      >
+        <DialogTitle style={{ cursor: 'move' }} id="draggable-dialog-title">
+          Alerta de inatividade!
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Deseja permanecer conectado? {idleTime}s
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleLogout} startIcon={<Logout />}>
             Logout
           </Button>
-          <Button variant="contained" onClick={handleClose}>
-            Stay
+          <Button onClick={handleClose} startIcon={<Stay />}>
+            Permanecer
           </Button>
-          <p>{idleTime}</p>
-        </div>
-      </Fade>
-    </Modal>
+        </DialogActions>
+      </Dialog>
+    </div>
   );
 };

@@ -1,16 +1,14 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Waypoint } from 'react-waypoint';
-import MUIDataTable, {
-  FilterType,
-  Responsive,
-  SelectableRows,
-} from 'mui-datatables';
+import MUIDataTable from 'mui-datatables';
 
 import { format } from 'date-fns';
 
 import {
   Button,
   CircularProgress,
+  createMuiTheme,
+  MuiThemeProvider,
   Table,
   TableBody,
   TableCell,
@@ -27,6 +25,7 @@ import Fade from '@material-ui/core/Fade';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import AddIcon from '@material-ui/icons/Add';
+
 import PageContainer from '../../components/common/PageContainer';
 import { apiXiloliteCQ } from '../../services/api';
 import { useToast } from '../../hooks/toast';
@@ -128,6 +127,23 @@ const MyLIMsSamples: React.FC = () => {
   const [sampleAnalysis, setSampleAnalysis] = useState<IDataSampleAnalysis[]>([
     {},
   ]);
+
+  const getMuiTheme = (): Theme =>
+    createMuiTheme({
+      overrides: {
+        MuiToolbar: {
+          root: {
+            backgroundColor: '#f3f3f3',
+          },
+        },
+        MuiGridListTile: {
+          root: {
+            backgroundColor: '##fff',
+            // minWidth: '12em',
+          },
+        },
+      },
+    });
 
   const getDataApi = useCallback(
     async (pageNum: number, pageSize: number, orderby?: string) => {
@@ -329,6 +345,8 @@ const MyLIMsSamples: React.FC = () => {
         filter: false,
         sort: true,
         viewColumns: false,
+        draggable: false,
+
         // infinite scrolling
         customBodyRenderLite: (dataIndex, rowIndex) => {
           const value = data[dataIndex].id;
@@ -355,8 +373,9 @@ const MyLIMsSamples: React.FC = () => {
       name: 'taken_date_time',
       label: 'Coletado em',
       options: {
+        viewColumns: true,
         filter: true,
-        filterType: 'custom' as FilterType,
+        filterType: 'custom' as const,
         customFilterListOptions: {
           render: v => {
             if (v[0] && v[1]) {
@@ -435,6 +454,7 @@ const MyLIMsSamples: React.FC = () => {
       name: 'updated_at',
       label: 'Atualizado em',
       options: {
+        display: false,
         filter: true,
         sort: true,
         customFilterListOptions: { render: (v: string) => `Atualizado: ${v}` },
@@ -449,6 +469,7 @@ const MyLIMsSamples: React.FC = () => {
       options: {
         filter: true,
         sort: true,
+        display: false,
         customFilterListOptions: {
           render: (v: string) => `Tipo de Amostra: ${v}`,
         },
@@ -477,7 +498,8 @@ const MyLIMsSamples: React.FC = () => {
       options: {
         sort: true,
         filter: true,
-        filterType: 'textField' as FilterType,
+        display: false,
+        filterType: 'textField' as const,
         customFilterListOptions: { render: (v: string) => `Lote: ${v}` },
       },
     },
@@ -509,18 +531,40 @@ const MyLIMsSamples: React.FC = () => {
 
   const options = {
     download: true,
+
+    downloadOptions: {
+      filename: 'excel-format.csv',
+      separator: ';',
+      filterOptions: {
+        useDisplayedColumnsOnly: true,
+        useDisplayedRowsOnly: true,
+      },
+    },
+
+    onDownload: (buildHead, buildBody, columnsDownload, dataDownload) => {
+      return `\uFEFF${buildHead(columnsDownload)}${buildBody(dataDownload)}`;
+    },
+
     print: true,
     filter: true,
     search: false,
     fixedHeader: true,
-    responsive: 'vertical' as Responsive,
-    selectableRows: 'single' as SelectableRows,
-    // selectableRowsOnClick: true,
+    responsive: 'standard' as const, // vertical, standard, simple
+    selectableRows: 'single' as const,
     selectableRowsHideCheckboxes: true,
+    selectableRowsHeader: false,
+    selectableRowsOnClick: true,
+    selectToolbarPlacement: 'none' as const, // 'replace' | 'above' 'none'
+
+    draggableColumns: {
+      enabled: true,
+      transitionTime: 300,
+    },
 
     onCellClick: async (cellData, cellMeta) => {
       // console.log('Sample Id', data[cellMeta.dataIndex]?.id);
       // console.log('cellMeta', cellMeta);
+      // console.log('cellData', cellData);
 
       if (cellMeta.colIndex === 0) {
         const sampleAnalysisGet = await getDataApiAnalysis(
@@ -534,6 +578,7 @@ const MyLIMsSamples: React.FC = () => {
       }
     },
 
+    // rowHover: true,
     pagination: false,
     tableBodyHeight: `${Math.trunc(Number(window.innerHeight * 0.7))}px`,
 
@@ -600,69 +645,10 @@ const MyLIMsSamples: React.FC = () => {
       },
     },
 
-    /* expandableRows: true,
-    expandableRowsHeader: false,
-    expandableRowsOnClick: true,
-
-    // rowsExpanded: [0, 1],
-    renderExpandableRow: (rowData, rowMeta) => {
-      const colSpan = rowData.length + 1;
-      console.log('renderExpandableRow', rowData, rowMeta);
-      const createData = (
-        name: string,
-        calories: number,
-        fat: number,
-        carbs: number,
-        protein: number,
-      ): any => {
-        return { name, calories, fat, carbs, protein };
-      };
-      const rows = [
-        createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-        createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-        createData('Eclair', 262, 16.0, 24, 6.0),
-        createData('Cupcake', 305, 3.7, 67, 4.3),
-        createData('Gingerbread', 356, 16.0, 49, 3.9),
-      ];
-      return (
-        <TableRow>
-          <TableCell colSpan={colSpan}>
-            <Table size="small" aria-label="Análises">
-              <TableHead>
-                <TableRow>
-                  <TableCell>Método</TableCell>
-                  <TableCell align="right">Valor</TableCell>
-                  <TableCell>Parecer</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {rows.map(row => (
-                  <TableRow key={row.name}>
-                    <TableCell component="th" scope="row">
-                      {row.name}
-                    </TableCell>
-                    <TableCell align="right">{row.calories}</TableCell>
-                    <TableCell>{row.fat}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableCell>
-        </TableRow>
-      );
-    }, */
-    /* onRowExpansionChange: (curExpanded, allExpanded, rowsExpanded) =>
-      console.log(
-        'onRowExpansionChange',
-        curExpanded,
-        allExpanded,
-        rowsExpanded,
-      ), */
-
     customToolbar: () => {
       return (
         <>
-          <Tooltip title="custom icon">
+          <Tooltip title="Incluir registro">
             <IconButton onClick={() => console.log('clicked +')}>
               <AddIcon />
             </IconButton>
@@ -692,13 +678,14 @@ const MyLIMsSamples: React.FC = () => {
 
   return (
     <PageContainer>
-      <MUIDataTable
-        title={titleTable}
-        data={data}
-        columns={columns}
-        options={options}
-      />
-
+      <MuiThemeProvider theme={getMuiTheme()}>
+        <MUIDataTable
+          title={titleTable}
+          data={data}
+          columns={columns}
+          options={options}
+        />
+      </MuiThemeProvider>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"

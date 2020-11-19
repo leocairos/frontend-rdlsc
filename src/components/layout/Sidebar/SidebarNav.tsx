@@ -9,6 +9,7 @@ import IconProfile from '@material-ui/icons/AccountBox';
 
 import IconLogout from '@material-ui/icons/ExitToApp';
 import IconHome from '@material-ui/icons/Home';
+import IconChat from '@material-ui/icons/Chat';
 import IconServiceDesk from '@material-ui/icons/DeveloperBoard';
 import IconSamples from '@material-ui/icons/Satellite';
 
@@ -65,6 +66,7 @@ const SidebarNav = (props: ISidebarNavProps): any => {
             link: '/mylimsSamples',
             Icon: IconSamples,
           },
+          { name: 'Chat', link: '/chat', Icon: IconChat },
           { name: 'Meu Perfil', link: '/profile', Icon: IconProfile },
         ]
       : []),
