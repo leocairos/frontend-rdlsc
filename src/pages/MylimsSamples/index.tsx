@@ -7,7 +7,7 @@ import { format } from 'date-fns';
 import {
   Button,
   CircularProgress,
-  createMuiTheme,
+  Grid,
   MuiThemeProvider,
   Table,
   TableBody,
@@ -18,93 +18,27 @@ import {
   Typography,
 } from '@material-ui/core';
 
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import AddIcon from '@material-ui/icons/Add';
+import EditIcon from '@material-ui/icons/Edit';
 
 import PageContainer from '../../components/common/PageContainer';
 import { apiXiloliteCQ } from '../../services/api';
 import { useToast } from '../../hooks/toast';
+import {
+  IAuxiliar,
+  IDataSampleAnalysis,
+  IDataSample,
+} from './MylimsSampleTypes';
 
-interface IAuxiliar {
-  value: string;
-}
+import { formatedData } from './MylimsSamplesUtil';
 
-interface IDataSampleAnalysis {
-  id?: number;
-  sample_id?: number;
-  analise?: string;
-  display_value?: string;
-  measurement_unit?: string;
-  conclusion?: string;
-}
-interface IDataSample {
-  id?: number;
-  sample_type?: string;
-  taken_date_time?: string;
-  collection_point?: string;
-  sample_conclusion?: string;
-  updated_at?: string;
-  sample_status?: string;
-}
-
-interface ISampleAPIResponse {
-  id: number;
-  sample_type: string;
-  taken_date_time: Date;
-  sample_conclusion: string;
-  collection_point: string;
-  updated_at: Date;
-  sample_status: string;
-  observation?: string;
-  lote?: string;
-}
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    modal: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    paper: {
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
-    },
-  }),
-);
-
-const formatedData = async (
-  samples: ISampleAPIResponse[],
-): Promise<IDataSample[]> => {
-  const dataFormated = samples.map((sample: ISampleAPIResponse) => {
-    return {
-      id: sample.id,
-      sample_type: sample.sample_type,
-      taken_date_time: sample.taken_date_time
-        ? format(new Date(sample.taken_date_time), 'dd/MM/yyyy HH:mm')
-        : '',
-      collection_point: sample.collection_point,
-      updated_at: sample.updated_at
-        ? format(new Date(sample.updated_at), 'dd/MM/yyyy HH:mm')
-        : '',
-      sample_conclusion: sample.sample_conclusion,
-      sample_status: sample.sample_status,
-      observation: sample.observation,
-      lote: sample.lote,
-    };
-  });
-
-  await Promise.all(dataFormated);
-
-  return dataFormated as IDataSample[];
-};
+import useStyles, { getMuiTheme } from '../../components/layout/useStyles';
+import MylimsSamplesDetail from './MylimsSamplesDetail';
 
 const MyLIMsSamples: React.FC = () => {
   const { addToast } = useToast();
@@ -123,27 +57,10 @@ const MyLIMsSamples: React.FC = () => {
   const [updatedAtFilter, setUpdatedAtFilter] = useState<string[]>([]);
 
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
+  const [openDetail, setOpenDetail] = useState(false);
   const [sampleAnalysis, setSampleAnalysis] = useState<IDataSampleAnalysis[]>([
     {},
   ]);
-
-  const getMuiTheme = (): Theme =>
-    createMuiTheme({
-      overrides: {
-        MuiToolbar: {
-          root: {
-            backgroundColor: '#f3f3f3',
-          },
-        },
-        MuiGridListTile: {
-          root: {
-            backgroundColor: '##fff',
-            // minWidth: '12em',
-          },
-        },
-      },
-    });
 
   const getDataApi = useCallback(
     async (pageNum: number, pageSize: number, orderby?: string) => {
@@ -255,8 +172,6 @@ const MyLIMsSamples: React.FC = () => {
     const filterList = applyFilters();
     setIsLoading(true);
 
-    // console.log('handleFilterSubmit', filterList);
-
     const arrayFilter = [''];
 
     if (filterList[1]?.length > 0) {
@@ -273,7 +188,6 @@ const MyLIMsSamples: React.FC = () => {
       updateAtFilter.setMinutes(0);
       updateAtFilter.setSeconds(0);
 
-      // console.log('updateAtFilter antes', updateAtFilter);
       switch (filterList[2][0]) {
         case 'Hoje':
           updateAtFilter.setHours(0);
@@ -574,7 +488,7 @@ const MyLIMsSamples: React.FC = () => {
         setSampleAnalysis(sampleAnalysisGet.samplesAnalysis);
 
         // console.log(sampleAnalysis);
-        setOpen(true);
+        setOpenDetail(true);
       }
     },
 
@@ -653,6 +567,11 @@ const MyLIMsSamples: React.FC = () => {
               <AddIcon />
             </IconButton>
           </Tooltip>
+          <Tooltip title="Alterar registro">
+            <IconButton onClick={() => console.log('clicked *')}>
+              <EditIcon />
+            </IconButton>
+          </Tooltip>
         </>
       );
     },
@@ -676,30 +595,39 @@ const MyLIMsSamples: React.FC = () => {
     </Typography>
   );
 
+  const dataTable = (
+    <MUIDataTable
+      title={titleTable}
+      data={data}
+      columns={columns}
+      options={options}
+    />
+  );
+
   return (
     <PageContainer>
       <MuiThemeProvider theme={getMuiTheme()}>
-        <MUIDataTable
-          title={titleTable}
-          data={data}
-          columns={columns}
-          options={options}
-        />
+        {openDetail ? <MylimsSamplesDetail /> : dataTable}
       </MuiThemeProvider>
-      <Modal
+    </PageContainer>
+  );
+};
+
+/*
+<Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         className={classes.modal}
-        open={open}
-        onClose={() => setOpen(false)}
+        open={openDetail}
+        onClose={() => setOpenDetail(false)}
         closeAfterTransition
         BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
         }}
       >
-        <Fade in={open}>
-          <div className={classes.paper}>
+        <Fade in={openDetail}>
+          <div className={classes.paperModal}>
             {sampleAnalysis[0] && (
               <h5>Amostra: {sampleAnalysis[0]?.sample_id}</h5>
             )}
@@ -725,11 +653,12 @@ const MyLIMsSamples: React.FC = () => {
                 ))}
               </TableBody>
             </Table>
+            <Button variant="contained" onClick={() => setOpenDetail(false)}>
+              Fechar
+            </Button>
           </div>
         </Fade>
       </Modal>
-    </PageContainer>
-  );
-};
 
+      */
 export default MyLIMsSamples;

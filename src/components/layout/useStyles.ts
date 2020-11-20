@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { createMuiTheme, makeStyles, Theme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -6,6 +6,17 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+  },
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  paperModal: {
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #000',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
   },
   avatar: {
     margin: theme.spacing(1),
@@ -19,5 +30,22 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(3, 0, 2),
   },
 }));
+
+export const getMuiTheme = (): Theme =>
+  createMuiTheme({
+    overrides: {
+      MuiToolbar: {
+        root: {
+          backgroundColor: '#f3f3f3',
+        },
+      },
+      MuiGridListTile: {
+        root: {
+          backgroundColor: '##fff',
+          // minWidth: '12em',
+        },
+      },
+    },
+  });
 
 export default useStyles;
