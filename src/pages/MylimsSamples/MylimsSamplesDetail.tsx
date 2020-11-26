@@ -1,28 +1,20 @@
-/* import * as React from 'react'; */
-import React, { useCallback } from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { Dispatch, SetStateAction, useCallback, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
 import {
-  Avatar,
   Button,
-  CssBaseline,
   TextField,
-  Box,
   Grid,
-  Link,
   Typography,
-  Container,
+  IconButton,
 } from '@material-ui/core';
-
-import { api } from '../../services/api';
-import { useToast } from '../../hooks/toast';
+import { ArrowBack } from '@material-ui/icons';
 
 import useStyles from '../../components/layout/useStyles';
-import Copyright from '../../components/layout/Copyright';
+
+import { IDataSample } from './MylimsSampleTypes';
 
 interface IMylimsSamplesDetailFormData {
   id: string;
@@ -30,10 +22,22 @@ interface IMylimsSamplesDetailFormData {
   sample_status: string;
 }
 
-const MylimsSamplesDetail: React.FC = () => {
+interface IDataSampleForm {
+  sample: IDataSample;
+  action: string;
+  setOpenDetail: Dispatch<SetStateAction<boolean>>;
+}
+
+const MylimsSamplesDetail: React.FC<IDataSampleForm> = ({
+  sample,
+  setOpenDetail,
+  action,
+}) => {
   const classes = useStyles();
-  const { addToast } = useToast();
-  const history = useHistory();
+
+  useEffect(() => {
+    // console.log('sample', sample);
+  }, []);
 
   const schema = yup.object().shape({
     collectionPoint: yup.string().required('Ponto de coleta obrigatório'),
@@ -46,31 +50,18 @@ const MylimsSamplesDetail: React.FC = () => {
     defaultValues: {},
   });
 
-  const onSubmit = useCallback(
-    async (data: IMylimsSamplesDetailFormData) => {
-      try {
-        console.log(data);
-
-        // history.push('/');
-        addToast({
-          type: 'success',
-          title: 'Cadastro realizado',
-        });
-      } catch (err) {
-        addToast({
-          type: 'error',
-          title: 'onSubmit: Erro no cadastro',
-          description: `${err.response.data.message}`,
-        });
-      }
-    },
-    [addToast],
-  );
+  const onSubmit = useCallback(async () => {}, []);
 
   return (
-    <div className={classes.paper}>
-      <Typography component="h1" variant="h5">
-        Amostra
+    <div className={classes.paperModal}>
+      <Typography variant="h5" className={classes.paperTitle}>
+        <IconButton aria-label="back" onClick={() => setOpenDetail(false)}>
+          <ArrowBack onClick={() => setOpenDetail(false)} fontSize="inherit" />
+        </IconButton>
+        Amostra {sample?.id} -
+        <span style={{ fontSize: 15, position: 'relative', top: -2 }}>
+          {action}
+        </span>
       </Typography>
       <form
         className={classes.form}
@@ -78,31 +69,53 @@ const MylimsSamplesDetail: React.FC = () => {
         noValidate
       >
         <Grid container spacing={2}>
-          <Grid item xs={12}>
+          <Grid item sm={3}>
             <TextField
               variant="outlined"
               margin="normal"
-              required
               fullWidth
+              required
               id="id"
               label="id"
               name="id"
-              autoFocus
+              disabled
+              value={sample?.id}
               error={!!errors.id}
               helperText={errors.id?.message}
               inputRef={register}
             />
           </Grid>
+          <Grid item sm={9}>
+            <TextField
+              variant="outlined"
+              margin="normal"
+              fullWidth
+              required
+              id="collection_point"
+              label="Ponto de Coleta"
+              name="collection_point"
+              disabled={action === 'view' || action === 'delete'}
+              value={sample?.collection_point}
+              error={!!errors.collection_point}
+              helperText={errors.collection_point?.message}
+              inputRef={register}
+            />
+          </Grid>
         </Grid>
-        <Button
-          type="submit"
-          fullWidth
-          variant="contained"
-          color="primary"
-          className={classes.submit}
-        >
-          Confirmar cadastro
-        </Button>
+        <Grid container spacing={10}>
+          <Grid item>
+            <Button type="submit" variant="contained">
+              Confirmar
+            </Button>
+            <Button
+              type="button"
+              variant="contained"
+              onClick={() => setOpenDetail(false)}
+            >
+              Cancelar
+            </Button>
+          </Grid>
+        </Grid>
       </form>
     </div>
   );

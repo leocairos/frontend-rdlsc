@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const HeaderDemo: React.FC<any> = props => {
+const HeaderMenu: React.FC<any> = props => {
   const classes = useStyles(props);
 
   return (
@@ -63,4 +63,4 @@ const HeaderDemo: React.FC<any> = props => {
   );
 };
 
-export default HeaderDemo;
+export default HeaderMenu;

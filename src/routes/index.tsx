@@ -84,7 +84,9 @@ const Routes: React.FC = () => {
         <Route path="/profile" component={Profile} isPrivate />
         <Route path="/chat" component={Chat} isPrivate />
         <Route path="/serviceDesk" component={ServiceDesk} isPrivate />
+
         <Route path="/mylimsSamples" component={MylimsSamples} isPrivate />
+
         <Route path="/" exact component={Home} isPrivate />
 
         {/* Private Routes protected by roles */}

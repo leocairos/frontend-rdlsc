@@ -7,7 +7,6 @@ import AppProvider from './hooks';
 
 import theme from './components/theme';
 
-// import AppRouter from './AppRouter';
 import Route from './routes';
 
 const App: React.FC = () => (
@@ -15,9 +14,7 @@ const App: React.FC = () => (
     <AppProvider>
       <div className="App">
         <CssBaseline />
-        {
-          // <AppRouter />
-        }
+
         <Route />
       </div>
     </AppProvider>

@@ -7,16 +7,21 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  paperTitle: {
+    backgroundColor: '#f3f3f3',
+    margin: -16,
+  },
   modal: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   paperModal: {
     backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    border: '2px solid #f3f3f3',
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(2),
   },
   avatar: {
     margin: theme.spacing(1),
@@ -43,6 +48,14 @@ export const getMuiTheme = (): Theme =>
         root: {
           backgroundColor: '##fff',
           // minWidth: '12em',
+        },
+      },
+      // handles row hover color and selected row color
+      MuiTableRow: {
+        hover: {
+          '&$root': {
+            '&:hover': { backgroundColor: 'cyan' },
+          },
         },
       },
     },

@@ -7,37 +7,26 @@ import { format } from 'date-fns';
 import {
   Button,
   CircularProgress,
-  Grid,
   MuiThemeProvider,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
   TextField,
   Typography,
 } from '@material-ui/core';
 
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import AddIcon from '@material-ui/icons/Add';
 import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
+import VisualizeIcon from '@material-ui/icons/Visibility';
 
 import PageContainer from '../../components/common/PageContainer';
 import { apiXiloliteCQ } from '../../services/api';
 import { useToast } from '../../hooks/toast';
-import {
-  IAuxiliar,
-  IDataSampleAnalysis,
-  IDataSample,
-} from './MylimsSampleTypes';
+import { IAuxiliar, IDataSample } from './MylimsSampleTypes';
 
 import { formatedData } from './MylimsSamplesUtil';
 
-import useStyles, { getMuiTheme } from '../../components/layout/useStyles';
+import { getMuiTheme } from '../../components/layout/useStyles';
 import MylimsSamplesDetail from './MylimsSamplesDetail';
 
 const MyLIMsSamples: React.FC = () => {
@@ -56,11 +45,10 @@ const MyLIMsSamples: React.FC = () => {
   const [sampleConclusionFilter, setSampleConclusionFilter] = useState([]);
   const [updatedAtFilter, setUpdatedAtFilter] = useState<string[]>([]);
 
-  const classes = useStyles();
   const [openDetail, setOpenDetail] = useState(false);
-  const [sampleAnalysis, setSampleAnalysis] = useState<IDataSampleAnalysis[]>([
-    {},
-  ]);
+  const [actionSample, setActionSample] = useState('list');
+
+  const [sampleSelected, setSampleSelected] = useState<IDataSample>({});
 
   const getDataApi = useCallback(
     async (pageNum: number, pageSize: number, orderby?: string) => {
@@ -68,30 +56,10 @@ const MyLIMsSamples: React.FC = () => {
       urlGet += `&filters=${filterData}`;
       urlGet += `&orderby=${orderby || sortOrder}`;
 
-      // console.log(urlGet);
       const response = await apiXiloliteCQ.get(urlGet);
       return response.data;
     },
     [filterData, sortOrder],
-  );
-
-  const getDataApiAnalysis = useCallback(
-    async (sampleId: number) => {
-      const urlGet = `/samples/samples/${sampleId}/analysis`;
-
-      // console.log(urlGet);
-      try {
-        const response = await apiXiloliteCQ.get(urlGet);
-        return response.data;
-      } catch (err) {
-        addToast({
-          type: 'error',
-          title: 'Erro na autenticação',
-          description: `${err.response.data.message}`,
-        });
-      }
-    },
-    [addToast],
   );
 
   const getNewData = useCallback(
@@ -113,7 +81,6 @@ const MyLIMsSamples: React.FC = () => {
         setIsLoading(true);
         const dataAPI = await getDataApi(defaultPage || 1, rowsPerPage);
         const dataLoaded = await formatedData(dataAPI.samples);
-
         setData(dataLoaded);
         setCount(dataAPI.total);
         setPage(Number(dataAPI.page));
@@ -476,20 +443,30 @@ const MyLIMsSamples: React.FC = () => {
     },
 
     onCellClick: async (cellData, cellMeta) => {
-      // console.log('Sample Id', data[cellMeta.dataIndex]?.id);
-      // console.log('cellMeta', cellMeta);
-      // console.log('cellData', cellData);
-
-      if (cellMeta.colIndex === 0) {
-        const sampleAnalysisGet = await getDataApiAnalysis(
+      // console.log(cellMeta);
+      // if (cellMeta.colIndex === 0) {
+      /* const sampleAnalysisGet = await getDataApiAnalysis(
           data[cellMeta.dataIndex]?.id || 0,
-        );
+        ); */
 
-        setSampleAnalysis(sampleAnalysisGet.samplesAnalysis);
+      // setSampleAnalysis(sampleAnalysisGet.samplesAnalysis);
 
-        // console.log(sampleAnalysis);
-        setOpenDetail(true);
-      }
+      const sampleAux = {
+        id: data[cellMeta.dataIndex]?.id,
+        sample_type: data[cellMeta.dataIndex]?.sample_type,
+        taken_date_time: data[cellMeta.dataIndex]?.taken_date_time,
+        collection_point: data[cellMeta.dataIndex]?.collection_point,
+        sample_conclusion: data[cellMeta.dataIndex]?.sample_conclusion,
+        updated_at: data[cellMeta.dataIndex]?.updated_at,
+        sample_status: data[cellMeta.dataIndex]?.sample_status,
+      };
+
+      setSampleSelected(sampleAux);
+      // console.log('sampleAux:', sampleAux);
+
+      // setOpenDetail(true);
+      // setActionSample('list');
+      // }
     },
 
     // rowHover: true,
@@ -563,13 +540,46 @@ const MyLIMsSamples: React.FC = () => {
       return (
         <>
           <Tooltip title="Incluir registro">
-            <IconButton onClick={() => console.log('clicked +')}>
+            <IconButton
+              onClick={() => {
+                setOpenDetail(true);
+                setSampleSelected({});
+                setActionSample('add');
+              }}
+            >
               <AddIcon />
             </IconButton>
           </Tooltip>
           <Tooltip title="Alterar registro">
-            <IconButton onClick={() => console.log('clicked *')}>
+            <IconButton
+              onClick={() => {
+                if (sampleSelected?.id) {
+                  setOpenDetail(true);
+                  setActionSample('edit');
+                }
+              }}
+            >
               <EditIcon />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Excluir registro">
+            <IconButton
+              onClick={() => {
+                setOpenDetail(true);
+                setActionSample('delete');
+              }}
+            >
+              <DeleteIcon />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Visualizar registro">
+            <IconButton
+              onClick={() => {
+                setOpenDetail(true);
+                setActionSample('view');
+              }}
+            >
+              <VisualizeIcon />
             </IconButton>
           </Tooltip>
         </>
@@ -607,11 +617,21 @@ const MyLIMsSamples: React.FC = () => {
   return (
     <PageContainer>
       <MuiThemeProvider theme={getMuiTheme()}>
-        {openDetail ? <MylimsSamplesDetail /> : dataTable}
+        {openDetail ? (
+          <MylimsSamplesDetail
+            sample={sampleSelected}
+            setOpenDetail={setOpenDetail}
+            action={actionSample}
+          />
+        ) : (
+          dataTable
+        )}
       </MuiThemeProvider>
     </PageContainer>
   );
 };
+
+export default MyLIMsSamples;
 
 /*
 <Modal
@@ -661,4 +681,22 @@ const MyLIMsSamples: React.FC = () => {
       </Modal>
 
       */
-export default MyLIMsSamples;
+
+/* const getDataApiAnalysis = useCallback(
+    async (sampleId: number) => {
+      const urlGet = `/samples/samples/${sampleId}/analysis`;
+
+      try {
+        const response = await apiXiloliteCQ.get(urlGet);
+        return response.data;
+      } catch (err) {
+        addToast({
+          type: 'error',
+          title: 'Erro na autenticação',
+          description: `${err.response.data.message}`,
+        });
+      }
+    },
+    [addToast],
+  );
+*/

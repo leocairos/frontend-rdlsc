@@ -150,7 +150,7 @@ const Users: React.FC = () => {
         filter: false,
         sort: false,
         customBodyRenderLite: (dataIndex, rowIndex) => {
-          console.log(data[dataIndex].name, data[dataIndex].avatar_url);
+          // console.log(data[dataIndex].name, data[dataIndex].avatar_url);
 
           return (
             <Avatar

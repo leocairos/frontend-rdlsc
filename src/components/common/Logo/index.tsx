@@ -2,12 +2,30 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 
-interface LogoProps {
+interface ILogoProps {
   className?: string;
   size?: number;
 }
 
-const Logo = (props: LogoProps) => {
+const useStyles = makeStyles(theme => ({
+  Logo: (props: ILogoProps) => ({
+    display: 'inline-block',
+    verticalAlign: 'text-bottom',
+    width: props.size,
+    height: props.size,
+  }),
+  path: {
+    transition: 'all .3s ease',
+  },
+  outline: {
+    fill: 'currentColor',
+  },
+  letter: {
+    fill: 'currentColor',
+  },
+}));
+
+const Logo = (props: ILogoProps) => {
   const classes = useStyles(props);
 
   return (
@@ -56,23 +74,5 @@ const Logo = (props: LogoProps) => {
     </svg>
   );
 };
-
-const useStyles = makeStyles(theme => ({
-  Logo: (props: LogoProps) => ({
-    display: 'inline-block',
-    verticalAlign: 'text-bottom',
-    width: props.size,
-    height: props.size,
-  }),
-  path: {
-    transition: 'all .3s ease',
-  },
-  outline: {
-    fill: 'currentColor',
-  },
-  letter: {
-    fill: 'currentColor',
-  },
-}));
 
 export default Logo;
